@@ -1,0 +1,793 @@
+\documentclass[12pt, a4paper]{amsart} 
+\usepackage[utf8]{inputenc}
+\usepackage[spanish]{babel}
+\usepackage{anysize}
+\usepackage{amsthm}
+\usepackage{multicol}
+\newcommand{\noun}[1]{\textsc{#1}}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{amscd}
+\usepackage[colorlinks=true,linktocpage=true,pagebackref=true, citecolor=red,linkcolor=blue]{hyperref}
+
+%opening
+
+\newtheorem{teorema}{Teorema}[section]
+\newtheorem{definicion}[teorema]{Definición}
+\newtheorem{prop}[teorema]{Proposición}
+\newtheorem{obs}[teorema]{Observación}
+\newtheorem{cor}[teorema]{Corolario}
+\newtheorem{ejem}[teorema]{Ejemplo}
+\newtheorem{ejems}[teorema]{Ejemplos}
+\newtheorem{ejer}{Ejercicio}
+
+\marginsize{2cm}{2cm}{1cm}{1cm}
+
+\begin{document}
+\thispagestyle{plain}
+
+\title{Estadística. Ejercicios PAU CCSS II}
+
+\date{}
+
+\maketitle
+
+\begin{ejer}\em (2021-2022)\\
+El peso en gramos de ciertas bolsas de palomitas se puede aproximar por una variable aleatoria con distribución normal de media $\mu$ y desviación típica igual a 10.\\
+a) Se toma una muestra aleatoria de tamaño 20 y se obtiene que su media muestral es de 200. Determine un intervalo de confianza del $95\%$ para el peso medio de dichas bolsas de palomitas.\\
+b) Determine el tamaño mínimo de la muestra para que el error máximo cometido en la estimación de la media sea menor que 0,5 gramos, con un nivel de confianza del $90\%.$
+\end{ejer}
+
+\begin{ejer}\em (2021-2022)\\
+El $64\%$ de los individuos de una población tienen una misma característica. Se escoge una muestra al azar de 120 individuos.\\
+a) ¿Cuál es la distribución aproximada que sigue la proporción de individuos con esa característica de la muestra?\\
+b) Halle la probabilidad de que más del $70\%$ de los individuos de la muestra posean dicha característica.
+\end{ejer}
+
+\begin{ejer}\em (2021-2022)\\
+Una muestra de tornillos, tomada de una compañía encargada de fabricarlos, ha permitido obtener un intervalo de confianza del $95\%$ para estimar la proporción de tornillos con defectos de fabricación, siendo 0,2 y 0,3 los extremos de dicho intervalo.\\
+a) Estime la proporción de tornillos con defectos de fabricación a partir de esa muestra y dé una cota del error de estimación al nivel de confianza considerado.\\
+b) Utilizando el mismo nivel de confianza, ¿cuál sería el error máximo de estimación si esa misma proporción se hubiera observado en una muestra de 700 tornillos?
+\end{ejer}
+
+\begin{ejer}\em (2021-2022)\\
+Considere una población donde observamos una variable aleatoria $X$ con distribución normal de media desconocida y desviación típica igual a 15. Se toma una muestra aleatoria simple para estimar la media muestral que arroja un intervalo de confianza cuyos extremos son 157,125 y 182,875.
+a) Calcule el valor de la media muestral.\\
+b) Si el tamaño de la muestra es 9, ¿cuál es el nivel de confianza para este intervalo?
+\end{ejer}
+
+\begin{ejer}\em (2021-2022)\\
+Para estimar la proporción poblacional de las familias que tienen internet en una determinada ciudad se ha tomado una muestra de familias al azar.\\
+a) Si la proporción poblacional fuese $P = 0,8,$ determine el tamaño mínimo necesario de la muestra de familias para garantizar que, con una confianza del $99\%,$ el margen de error en la estimación no supera el $6\%.$\\
+b) Tomada al azar una muestra de 200 familias, se encontró que 170 tenían internet. Determine un intervalo de confianza al $95\%$ para la proporción de familias que tienen internet.
+\end{ejer}
+
+\begin{ejer}\em (2021-2022)\\
+Sea una población donde observamos la variable aleatoria $X$ con distribución normal de media 20 y desviación típica 5. Sea $\overline{X}$ la media muestral de una muestra aleatoria de tamaño 25.\\
+a) ¿Cuál es la distribución de $\overline{X}$?\\
+b) Calcule $P(19 < \overline{X} < 22).$
+\end{ejer}
+
+\begin{ejer}\em (2021-2022)\\
+Una cementera rellena sacos de cemento cuyo peso en kilogramos se puede aproximar por una variable aleatoria con distribución normal de media desconocida y desviación típica igual a 2 kg.\\
+a) Se toma una muestra aleatoria de tamaño 20 y se obtiene que su media muestral es 50 kg. Determine un intervalo de confianza del $99\%$ para el peso medio de un saco de cemento.\\
+b) Determine el tamaño mínimo de la muestra para que el error máximo cometido en la estimación de la media sea menor que 1 kilogramo, con un nivel de confianza del $90\%.$
+\end{ejer}
+
+\begin{ejer}\em (2021-2022)\\
+Considere una población donde observamos una variable aleatoria $X$ con distribución normal de media $\mu$ y desviación típica $\sigma.$ Sea $\overline{X}$ la media muestral de una muestra aleatoria de tamaño 10.\\
+a) Determine el valor de $\sigma$ sabiendo que $I = (58,2; 73,8)$ es un intervalo de confianza del $95\%$ para $\mu.$\\
+b) Si $\sigma = 20,$ calcule $P (-10 < \overline{X} - \mu < 10).$
+\end{ejer}
+
+
+\begin{ejer}\em (2020-2021)\\
+El peso de los huevos producidos en una granja avícola se puede aproximar por una variable aleatoria de
+distribución normal de media $\mu$ gramos y desviación típica  $\sigma =$ 8 gramos.\\
+a) Se toma una muestra aleatoria simple de 20 huevos, obteniéndose una media muestral de 60 gramos.
+Determine un intervalo de confianza al 95 $\%$ para $\mu$ .\\
+b) Suponga que $\mu$ = 59 gramos. Calcule la probabilidad de que al tomar una muestra aleatoria simple de 10
+huevos, la media muestral, $X$ , esté comprendida entre 57 y 61 gramos.
+\end{ejer}
+
+
+\begin{ejer}\em (2020-2021)\\
+El tiempo necesario para cumplimentar un test psicotécnico se puede aproximar por una variable aleatoria con
+distribución normal de media $\mu$ minutos y desviación típica  $\sigma =$ 3 minutos.\\
+a) Determine el tamaño mínimo que debe tener una muestra aleatoria simple para que el error máximo cometido
+en la estimación de $\mu$ sea menor de 1 minuto con un nivel de confianza del 95 $\%$ .\\
+b) Suponga que $\mu$ = 32 minutos. Calcule la probabilidad de que al tomar una muestra aleatoria simple de
+tamaño n = 16 pruebas, el tiempo medio empleado en su realización, $X$ , sea menor que 30, 5 minutos.
+\end{ejer}
+
+\begin{ejer}\em (2020-2021)\\
+Se quiere evaluar el uso de las redes sociales por parte de los menores de 14 años.\\
+a) Se toma una muestra de 500 menores de 14 años, de los cuales 320 tienen cuenta en alguna red social.
+Calcule el intervalo de confianza al 96 $\%$ para estimar la proporción de menores de 14 años que tienen cuenta
+en alguna red social.\\
+b) Suponiendo que la proporción poblacional es $P = 0,5,$ determine el tamaño mínimo necesario de una muestra
+de menores de 14 años para garantizar que, con una confianza del 95 $\%,$el margen de error en la estimación
+no supere el 5 $\%$. 
+\end{ejer}
+
+\begin{ejer}\em (2020-2021)\\
+El consumo diario de pan de un estudiante de secundaria sigue una distribución normal de media $\mu$ y desviación
+típica 20 gramos.\\
+a) Se toma una muestra aleatoria simple de tamaño 36. Calcule la probabilidad de que la media muestral $X$ no
+supere los 125 gramos si $\mu$ = 120 gramos.\\
+b) Sabiendo que para una muestra aleatoria simple de 81 estudiantes de secundaria se ha obtenido el intervalo
+de confianza (117,3444; 124,6556) para $\mu$ , determine el nivel de confianza con el que se obtuvo dicho intervalo.
+\end{ejer}
+
+\begin{ejer}\em (2019-2020)\\
+El peso de una patata, en gramos (g), de una remesa que llega a un mercado se puede aproximar por una
+variable aleatoria $X$ con distribución normal de media $\mu$ y desviación típica  $\sigma =$ 60 g.
+a) Determine el tamaño mínimo que debe tener una muestra aleatoria simple para que el error máximo cometido
+en la estimación de $\mu$ sea menor que 20 g, con un nivel de confianza del 95 $\%$.\\
+b) Suponiendo que se selecciona una muestra aleatoria simple de tamaño n = 100 , calcule el valor de la media
+$\mu$ para que $P (X \leqslant 220) = 0,9940.$
+\end{ejer}
+
+\begin{ejer}\em (2019-2020)\\
+Una persona se ha propuesto salir a caminar todos los días realizando el mismo recorrido y cronometrando el
+tiempo que tarda en completarlo. El tiempo que está caminando por este recorrido puede aproximarse por una
+variable aleatoria con distribución normal cuya desviación típica es 10 minutos.\\
+a) Utilizando la información de una muestra aleatoria simple, se ha obtenido el intervalo de confianza
+(26. 9, 37. 1) , expresado en minutos, para estimar el tiempo medio que tarda en realizar el recorrido, $\mu$ , con
+un nivel de confianza del 98,92 $\%.$Obtenga el tamaño de la muestra elegida y el valor de la media muestral.\\
+b) Si el tiempo medio para completar el recorrido es $\mu$ = 30 minutos, calcule la probabilidad de que, en una
+muestra de 16 días elegidos al azar, esta persona tarde entre 25 y 35 minutos de media para completar el
+recorrido.
+\end{ejer}
+
+\begin{ejer}\em (2019-2020)\\
+La publicidad de una marca de bolígrafos afirma que escriben 2 km. Para realizar un control de calidad, se
+considera que la longitud de escritura de estos bolígrafos puede aproximarse por una variable aleatoria con
+distribución normal de media $\mu$ km y desviación típica 0,5 km.\\
+a) Obtenga el número mínimo de bolígrafos que deberían seleccionarse en una muestra aleatoria simple para
+que el error máximo cometido en la estimación de $\mu$ por la media muestral, sea como mucho 0,05 km con un
+nivel de confianza del 95,44 $\%$.\\
+b) Si la longitud media de escritura, $\mu$ , es la anunciada en la publicidad, calcule la probabilidad de que, con una
+muestra de 16 bolígrafos elegidos al azar, se puedan escribir más de 30 km.
+\end{ejer}
+
+\begin{ejer}\em (2019-2020)\\
+Determinado modelo de lavadora tiene un programa de lavado con un consumo de agua que puede aproximarse
+por una variable aleatoria con distribución normal cuya desviación típica es de 7 litros.\\
+a) En una muestra aleatoria simple de 10 lavadoras los consumos de agua en un lavado con este programa
+fueron los siguientes:
+\[40\hspace*{5mm}45 \hspace*{5mm} 38\hspace*{5mm} 44\hspace*{5mm} 41\hspace*{5mm} 40\hspace*{5mm} 35\hspace*{5mm} 50\hspace*{5mm} 40\hspace*{5mm} 37\]
+Construya el intervalo de confianza al 90 $\%$ para estimar el consumo medio de agua de este modelo de lavadoras
+con dicho programa de lavado.\\
+b) A partir de una muestra de 64 lavadoras elegidas al azar, se obtuvo un intervalo de confianza para la media
+con una longitud de 5 litros. Obtenga el nivel de confianza utilizado para construir el intervalo.
+\end{ejer}
+
+
+\begin{ejer}\em (2018-2019)\\
+Una máquina rellena paquetes de harina. El peso de la harina en cada paquete se puede aproximar por una
+distribución normal de media $\mu$ y desviación típica 25 gramos.\\
+a) Se analiza el peso del contenido de 15 paquetes. La media muestral de estos pesos resulta ser 560 gramos.
+Determínese un intervalo de confianza con un nivel del 95 $\%$ para la media poblacional.\\
+b) Se sabe que la media poblacional del peso de la harina de un paquete es 560 gramos. Calcúlese la
+probabilidad de que la media muestral no sea menor que 565 gramos para una muestra de 50 paquetes.
+\end{ejer}
+
+\begin{ejer}\em (2018-2019)\\
+Para estudiar el absentismo laboral injustificado, se desea estimar la proporción de trabajadores, $P,$ que no
+acuden a su puesto de trabajo sin justificación al menos un día al año.\\
+a) Sabiendo que la proporción poblacional de absentismo laboral injustificado es $P = 0,022,$ determínese el
+tamaño mínimo necesario de una muestra de trabajadores para garantizar que, con una confianza del 99 $\%,$el
+margen de error en la estimación no supera el 4 $\%$. \\
+b) Tomada al azar una muestra de 1000 trabajadores, se encontró que 250 había faltado injustificadamente a
+su puesto de trabajo al menos una vez al año. Determínese un intervalo de confianza al 95 $\%$ para la proporción
+de individuos que se ausentan en el trabajo al menos una vez al año sin ninguna justificación.
+\end{ejer}
+
+\begin{ejer}\em (2018-2019)\\
+El precio mensual de las clases de Pilates en una región se puede aproximar mediante una variable aleatoria
+con distribución normal de media $\mu$ euros y varianza 49 euros$^2$ .\\
+a) Seleccionada una muestra aleatoria simple de 64 centros en los que se imparte este tipo de clases, el precio
+medio mensual observado fue de 34 euros. Obténgase un intervalo de confianza al 99’2 $\%$ para estimar el precio
+medio mensual, $\mu$ , de las clases de Pilates.\\
+b) Determínese el tamaño muestral mínimo que debería tener una muestra aleatoria simple para que el error
+máximo cometido en la estimación de la media sea como mucho de 3 euros, con una confianza del 95 $\%$. 
+\end{ejer}
+
+\begin{ejer}\em (2018-2019)\\
+El peso de las mochilas escolares de los niños de 5º y 6º de primaria, medido en kilogramos, puede aproximarse
+por una variable aleatoria con distribución normal de media $\mu$ kilogramos y desviación típica  $\sigma =$ 1 0 5 kilogramos.\\
+a) En un estudio se tomó una muestra aleatoria simple de dichas mochilas escolares y se estimó el peso
+medio utilizando un intervalo de confianza del 95 $\%.$La amplitud de este intervalo resultó ser 0’49 kilogramos.
+Obténgase el número de mochilas seleccionadas en la muestra.\\
+b) Supóngase que $\mu$ = 6 kilogramos. Seleccionada una muestra aleatoria simple de 225 mochilas escolares,
+calcúlese la probabilidad de que el peso medio muestral supere los 5’75 kilogramos, que es la cantidad máxima
+recomendada para los escolares de estos cursos.
+\end{ejer}
+
+\begin{ejer}\em (2017-2018)\\
+La distancia anual, en kilómetros (km), que recorren las furgonetas de una empresa de reparto, se puede
+aproximar por una variable aleatoria con distribución normal de media $\mu$ km y desviación típica  $\sigma =$24 000 km.\\
+a) Determínese el tamaño mínimo de una muestra aleatoria simple para que la amplitud del intervalo de
+confianza al 95 $\%$ para $\mu$ sea a lo sumo de 23 550 km.\\
+b) Se toma una muestra aleatoria simple de 25 furgonetas. Suponiendo que $\mu$ = 150 000 km, calcúlese la
+probabilidad de que la distancia media anual observada, $X$ , esté entre 144 240 km y 153 840 km.
+\end{ejer}
+
+\begin{ejer}\em (2017-2018)\\
+Una empresa quiere lanzar un producto al mercado. Por ello desea estimar la proporción de individuos, $P,$ que
+estarían dispuestos a comprarlo.\\
+a) Asumiendo que la proporción poblacional es $P = 0’5,$ determínese el tamaño mínimo necesario de una
+muestra de individuos para garantizar que, con una confianza del 95 $\%,$el margen de error en la estimación no
+supere el 3 $\% ( \pm 3\%).$\\
+b) Se tomó una muestra aleatoria simple de 450 individuos de los cuales 90 afirmaron que comprarían el
+producto. Obténgase un intervalo de confianza del 90 $\%$ para la proporción de individuos que estarían dispuestos
+a comprar el producto.
+\end{ejer}
+
+\begin{ejer}\em (2017-2018)\\
+La empresa Dulce.SA produce sobres de azúcar cuyo peso en gramos se puede aproximar por una variable
+aleatoria $X$ con distribución normal con media $\mu$ gramos y desviación típica  $\sigma =$ 0’5 gramos.\\
+a) Determínese el tamaño mínimo que debe tener una muestra aleatoria simple para que el error máximo
+cometido en la estimación de la media sea como mucho de 0’25 gramos con un nivel de confianza del 95 $\%$.\\ 
+b) Calcúlese la probabilidad de que al tomar una muestra aleatoria simple de 25 sobres, la media muestral, $X$ ,
+pese más de 12’25 gramos, sabiendo que $\mu$ = 12 gramos.
+\end{ejer}
+
+\begin{ejer}\em (2017-2018)\\
+El número de descargas por hora de cierta aplicación para móviles, se puede aproximar por una variable
+aleatoria de distribución normal de media $\mu$ descargas y desviación típica  $\sigma =$ 20 descargas.\\
+a) Se toma una muestra aleatoria simple de 40 horas, obteniéndose una media muestral de 99’5 descargas.
+Determínese un intervalo de confianza al 95 $\%$ para $\mu$ .\\
+b) Supóngase que $\mu$ = 100 descargas. Calcúlese la probabilidad de que al tomar una muestra aleatoria simple
+de 10 horas, la media muestral, $X$ , esté entre 100 y 110 descargas.
+\end{ejer}
+
+\begin{ejer}\em (2016-2017)\\
+El tiempo, en horas, que tarda cierta compañía telefónica en hacer efectiva la portabilidad de un número de
+teléfono se puede aproximar por una variable aleatoria con distribución normal de media $\mu$ y desviación típica
+ $\sigma =$ 24 horas. Se toma una muestra aleatoria simple de tamaño 16. Calcúlese:\\
+a) La probabilidad de que la media muestral del tiempo, $X$ , supere las 48 horas, si $\mu$ = 36 horas.\\
+b) El nivel de confianza con el que se ha calculado el intervalo (24’24 ; 47’76) para $\mu$ .
+\end{ejer}
+
+\begin{ejer}\em (2016-2017)\\
+La longitud auricular de la oreja en varones jóvenes, medida en centímetros (cm), se puede aproximar por una
+variable aleatoria con distribución normal de media $\mu$ y desviación típica  $\sigma =$ 0’6 cm.\\
+a) Una muestra aleatoria simple de 100 individuos proporcionó una media muestral $X$ = 7 cm. Calcúlese un
+intervalo de confianza al 98 $\%$ para $\mu$ .\\
+b) ¿Qué tamaño mínimo debe tener una muestra aleatoria simple para que el error máximo cometido en la
+estimación de $\mu$ por la media muestral sea a lo sumo de 0’1 cm, con un nivel de confianza del 98 $\%?$
+\end{ejer}
+
+\begin{ejer}\em (2016-2017)\\
+El peso en canal, en kilogramos (kg), de una raza de corderos a las seis semanas de su nacimiento se puede
+aproximar por una variable aleatoria con distribución normal de media $\mu$ y desviación típica igual a 0’9 kg.\\
+a) Se tomó una muestra aleatoria simple de 324 corderos y el peso medio observado fue $X$ =7’8 kg. Obténgase
+un intervalo de confianza con un nivel del 99’2 $\%$ para $\mu$ .\\
+b) Determínese el tamaño mínimo que debería tener una muestra aleatoria simple de la variable para que el
+correspondiente intervalo de confianza para $\mu$ al 95 $\%$ tenga una amplitud a lo sumo de 0’2 kg.
+\end{ejer}
+
+\begin{ejer}\em (2016-2017)\\
+El peso en toneladas (T) de los contenedores de un barco de carga se puede aproximar por una variable
+aleatoria normal de media $\mu$ y desviación típica  $\sigma =$ 3T. Se toma una muestra aleatoria simple de 484
+contenedores.\\
+a) Si la media de la muestra es $X$ =25’9T, obténgase un intervalo de confianza con un nivel del 90 $\%$ para $\mu$ .\\
+b) Supóngase ahora que $\mu$ = 23T. Calcúlese la probabilidad de que puedan transportarse en un barco cuya
+capacidad máxima es de 11000T.
+\end{ejer}
+
+\begin{ejer}\em (2015-2016)\\
+El tiempo, en minutos, que los empleados de unos grandes
+almacenes tardan en llegar a su casa se puede aproximar por una variable aleatoria con distribución normal
+de media desconocida $\mu$ y desviación típica  $\sigma =$ 5.\\
+a) Se toma una muestra aleatoria simple de 64 empleados y su media muestral es $X$ = 30 minutos. Determínese
+un intervalo de confianza al 95 $\%$ para $\mu$ .\\
+b) ¿Qué tamaño mínimo debe tener una muestra aleatoria simple para que el correspondiente intervalo de
+confianza para $\mu$ al 99 $\%$ tenga una amplitud a lo sumo de 10 minutos?
+\end{ejer}
+
+\begin{ejer}\em (2015-2016)\\
+El tiempo, en meses, que una persona es socia de un club deportivo, se puede aproximar por una variable
+aleatoria con distribución normal de media desconocida $\mu$ y desviación típica  $\sigma =$ 9.\\
+a) Se toma una muestra aleatoria simple de 100 personas que han sido socias de ese club y se obtuvo una
+estancia media de $X$ = 8’1 meses. Determínese un intervalo de confianza al 90 $\%$ para $\mu$ .\\
+b) Sabiendo que para una muestra aleatoria simple de 144 personas se ha obtenido un intervalo de confianza
+(7’766; 10’233) para $\mu$ , determínese el nivel de confianza con el que se obtuvo dicho intervalo.
+\end{ejer}
+
+\begin{ejer}\em (2015-2016)\\
+La producción diaria de leche, medida en litros, de una granja familiar de ganado vacuno se puede aproximar
+por una variable aleatoria con distribución normal de media $\mu$ desconocida y desviacion típica  $\sigma =$ 50 litros.\\
+a) Determínese el tamaño mínimo de una muestra aleatoria simple para que el correspondiente intervalo de
+confianza para $\mu$ al 95 $\%$ tenga una amplitud a lo sumo de 10 litros.\\
+b) Se toman los datos de producción de 25 días escogidos al azar. Calcúlese la probabilidad de que la media
+de las producciones obtenidas, $X$ , sea menor o igual a 940 litros si sabemos que $\mu$ = 950 litros.
+\end{ejer}
+
+\begin{ejer}\em (2015-2016)\\
+El peso por unidad, en gramos, de la gamba roja de Palamós, se puede aproximar por una variable aleatoria
+con distribución normal de media $\mu$ desconocida y desviación típica  $\sigma =$ 5 gramos.\\
+a) Se ha tomado una muestra aleatoria simple de 25 gambas y la media de sus pesos ha sido $X$ = 70 gramos.
+Calcúlese un intervalo de confianza al 95 $\%$ para $\mu$ .\\
+b) Si sabemos que $\mu$ = 70 gramos, y se consideran los pesos de las 12 gambas de una caja como una muestra
+aleatoria simple, calcúlese la probabilidad de que el peso total de esas 12 gambas sea mayor o igual que 855
+gramos.
+\end{ejer}
+
+\begin{ejer}\em (2014-2015)\\
+La cantidad de fruta, medida en gramos, que contienen los botes de mermelada de una cooperativa con
+producción artesanal se puede aproximar mediante una variable aleatoria con distribución normal de media
+ $\mu$ y desviación típica de 10 gramos.\\
+a) Se seleccionó una muestra aleatoria simple de 100 botes de mermelada, y la cantidad total de fruta que
+contenían fue de 16.000 gramos. Determínese un intervalo de confianza al 95 $\%$ para la media $\mu$ .\\
+b) A partir de una muestra aleatoria simple de 64 botes de mermelada se ha obtenido un intervalo de confianza
+para la media $\mu$ con un error de estimación de 2, 35 gramos. Determínese el nivel de confianza utilizado para
+construir el intervalo.
+\end{ejer}
+
+\begin{ejer}\em (2014-2015)\\
+En cierta región, el gasto familiar realizado en gas natural, medido en euros, durante un mes determinado se
+puede aproximar mediante una variable aleatoria con distribución normal de media $\mu$ y desviación típica 75
+euros.\\
+a) Determínese el mínimo tamaño muestral necesario para que al estimar la media del gasto familiar en gas
+natural, $\mu$ , mediante un intervalo de confianza al 95 $\%,$el error máximo cometido sea inferior a 15 euros.\\
+b) Si la media del gasto familiar en gas natural, $\mu$ , es de 250 euros y se toma una muestra aleatoria simple de
+81 familias, ¿cuál es la probabilidad de que la media muestral, $X$ , sea superior a 230 euros?
+\end{ejer}
+
+\begin{ejer}\em (2014-2015)\\
+El tiempo de reacción ante un obstáculo imprevisto de los conductores de automóviles de un país, en
+milisegundos (ms), se puede aproximar por una variable aleatoria con distribución normal de media  $\mu$
+desconocida y desviación típica  $\sigma =$ 250 ms.\\
+a) Se toma una muestra aleatoria simple y se obtiene un intervalo de confianza (701; 799), expresado en ms,
+para $\mu$ con un nivel del 95 $\%.$Calcúlese la media muestral y el tamaño de la muestra elegida.\\
+b) Se toma una muestra aleatoria simple de tamaño 25. Calcúlese el error máximo cometido en la estimación
+de $\mu$ mediante la media muestral con un nivel de confianza del 80 $\%$. 
+\end{ejer}
+
+\begin{ejer}\em (2014-2015)\\
+La duración de cierto componente electrónico, en horas (h), se puede aproximar por una variable aleatoria con
+distribución normal de media $\mu$ desconocida y desviación típica igual a 1000 h.\\
+a) Se ha tomado una muestra aleatoria simple de esos componentes electrónicos de tamaño 81 y la media
+muestral de su duración ha sido $X$ = 8000 h. Calcúlese un intervalo de confianza al 99 $\%$ para $\mu$ .\\
+b) ¿Cuál es la probabilidad de que la media muestral esté comprendida entre 7904 y 8296 horas para una
+muestra aleatoria simple de tamaño 100 si sabemos que $\mu$ = 8100 h?
+\end{ejer}
+
+\begin{ejer}\em (2013-2014)\\
+La estatura en centímetros (cm) de los varones mayores de edad de una determinada población se puede aproximar por una variable aleatria con distribución normal de media $\mu$ y desviación típica $\sigma=16$ cm.\\
+a) Se tomó una muestra aleatoria simple de 625 individuos obteniéndose una media muestral $\overline{x}=169$ cm. Hállese un intervalo de confianza al $98\%$ para $\mu.$\\
+b) ¿Cuál es el mínimo tamaño muestral necesario para que el error máximo cometido en la estimación de $\mu$ por la media muestral sea menor que 4 cm, con un nivel de confianza del $90\%$?
+\end{ejer}
+
+\begin{ejer}\em (2013-2014)\\
+El mínimo tamaño muestral necesario para estimar la media de una determinada característica de una
+población que puede aproximarse por una variable aleatoria con distribución normal de desviación típica
+$\sigma$, con un error máximo de 3, 290 y un nivel de confianza del 90 $\%,$supera en 7500 unidades al que se
+necesitaría si el nivel de confianza fuera del 95 $\%$ y el error máximo fuera de 7, 840.\\
+Exprésense los tamaños muestrales en función de la desviación típica $\sigma$  y calcúlense la desviación típica de
+la población y los tamaños muestrales respectivos.\\
+Nota: Utilícese $z_{0,05} = 1, 645.$
+\end{ejer}
+
+\begin{ejer}\em (2013-2014)\\
+La longitud, en milímetros (mm), de los individuos de una determinada colonia de gusanos de seda se puede aproximar por una variable aleatoria con distribución normal de media desconocida $\mu$ y desviación típica igual a 3 mm.\\
+a) Se toma una muestra aleatoria simple de 48 gusanos de seda y se obtiene una media muestral igual a 36 mm. Determínese un intervalo de confianza para la media poblacional de la longitud de los gusanos de seda con un nivel de confianza del $95\%.$\\
+b) Determínse el tamaño muestral mínimo necesario para que el error máximo cometido en la estimación de $\mu$ por la media muestral sea menor o igual que 1 mm con un nivel de confianza del $90\%.$
+\end{ejer}
+
+\begin{ejer}\em (2013-2014)\\
+El consumo mensual de leche (en litros) de los alumnos de un determinado colegio se puede aproximar por una variable aleatoria con distribución normal de media $\mu$ y desviación típica $\sigma= 3$ litros.\\
+a) Se toma una muestra aleatoria simple y se obtiene el intervalo de confianza (16,33; 19,27) para estimar $\mu,$ con un nivel de confianza del $95\%.$ Calcúlese la media muestral y el tamaño de la muestra elegida.\\
+b) Se toma una muestra aleatoria simple de tamaño 64. Calcúlese el error máximo cometido en la estimación de $\mu$ mediante la media muestral con un nivel de confianza del $95\%.$
+\end{ejer}
+
+\begin{ejer}\em (2012-2013)\\
+El tiempo de renovación de un teléfono móvil, expresado en años, se puede aproximar mediante una
+distribución normal con desviación típica 0,4 años.\\
+a) Se toma una muestra aleatoria simple de 400 usuarios y se obtiene una media muestral igual a 1,75 años.
+Determínese un intervalo de confianza al 95 $\%$ para el tiempo medio de renovación de un teléfono móvil.\\
+b) Determínese el tamaño muestral mínimo necesario para que el valor absoluto de la diferencia entre la
+media muestral y la media poblacional sea menor o igual a 0,02 años con un nivel de confianza del 90 $\%$ .
+\end{ejer}
+
+\begin{ejer}\em (2012-2013)\\
+Se considera una variable aleatoria con distribución normal de media $\mu$ y desviación típica igual a 210. Se
+toma una muestra aleatoria simple de 64 elementos.\\
+a) Calcúlese la probabilidad de que el valor absoluto de la diferencia entre la media muestral y $\mu$ sea mayor
+o igual que 22.\\
+b) Determínese un intervalo de confianza del 99 $\%$ para $\mu,$ si la media muestral es igual a 1532.
+\end{ejer}
+
+\begin{ejer}\em (2012-2013)\\
+El número de megabytes (Mb) descargados mensualmente por el grupo de clientes de una compañía de
+telefonía móvil con la tarifa AA se puede aproximar por una distribución normal con media 3,5 Mb y
+desviación típica igual a 1,4 Mb. Se toma una muestra aleatoria simple de tamaño 49.\\
+a) ¿Cuál es la probabilidad de que la media muestral sea inferior a 3,37Mb?\\
+b) Supóngase ahora que la media poblacional es desconocida y que la media muestral toma el valor de 3,42
+Mb. Obténgase un intervalo de confianza al 95 $\%$ para la media de la población.
+\end{ejer}
+
+\begin{ejer}\em (2012-2013)\\
+La duración en horas de un determinado tipo de bombilla se puede aproximar por una distribución normal
+con media $\mu$ y desviación típica igual a 1940 h. Se toma una muestra aleatoria simple.\\
+a) ¿Qué tamaño muestral se necesitaría como mínimo para que, con un nivel de confianza del 95 $\%,$el valor
+absoluto de la diferencia entre $\mu$ y la duración media observada $X$ de esas bombillas sea inferior a 100 h?\\
+b) Si el tamaño de la muestra es 225 y la duración media observada $X$ es de 12415 h, obténgase un intervalo
+de confianza al 90 $\%$ para $\mu.$
+\end{ejer}
+
+\begin{ejer}\em (2011-2012)\\
+La duración en kilómetros de los neumáticos de una cierta marca se puede aproximar por una
+variable aleatoria con distribución normal de media $\mu$ desconocida y desviación típica igual a
+3000 kilómetros.\\
+(a) Se toma una muestra aleatoria simple de 100 neumáticos y se obtiene una media muestral
+de 48000 kilómetros. Determínese un intervalo de confianza con un nivel del 90 $\%$ para $\mu.$\\
+(b) Calcúlese el tamaño mínimo que debe tener la muestra para que el valor absoluto de
+la diferencia entre la media de la muestra y $\mu$ sea menor o igual a 1000 kilómetros con
+probabilidad mayor o igual que 0,95.
+\end{ejer}
+
+\begin{ejer}\em (2011-2012)\\
+El tiempo de espera para ser atendido en un cierto establecimiento se puede aproximar por una
+variable aleatoria con distribución normal de media $\mu$ desconocida y desviación típica igual a 3
+minutos. Se toma una muestra aleatoria simple de tamaño 121.\\
+(a) Calcúlese la probabilidad de que el valor absoluto de la diferencia entre la media de la
+muestra y $\mu$ sea mayor que 0,5 minutos.\\
+(b) Determínese un intervalo de confianza con un nivel del 95 $\%$ para $\mu,$ si la media de la
+muestra es igual a 7 minutos.
+\end{ejer}
+
+\begin{ejer}\em (2011-2012)\\
+Se supone que el peso en kilogramos de los alumnos de un colegio de Educación Primaria el
+primer día del curso se puede aproximar por una variable aleatoria con distribución normal
+de desviación típica igual a 2,8 kg. Una muestra aleatoria simple de 8 alumnos de ese colegio
+proporciona los siguientes resultados (en kg):
+\[26\hspace*{5mm} 27,5\hspace*{5mm} 31\hspace*{5mm} 28\hspace*{5mm} 25,5\hspace*{5mm} 30,5\hspace*{5mm} 32\hspace*{5mm} 31,5.\]
+(a) Determínese un intervalo de confianza con un nivel del 90 $\%$ para el peso medio de los
+alumnos de ese colegio el primer día de curso.\\
+(b) Determínese el tamaño muestral mínimo necesario para que el valor absoluto de la
+diferencia entre la media muestral y la media poblacional sea menor o igual que 0,9 kg
+con un nivel de confianza del 97 $\%$. 
+\end{ejer}
+
+\begin{ejer}\em (2011-2012)\\
+Se supone que el gasto que hacen los individuos de una determinada población en regalos de
+Navidad se puede aproximar por una variable aleatoria con distribución normal de media $\mu$ y
+desviación típica igual a 45 euros.\\
+(a) Se toma una muestra aleatoria simple y se obtiene el intervalo de confianza (251,6 ; 271,2)
+para $\mu,$ con un nivel de confianza del 95 $\%.$Calcúlese la media muestral y el tamaño de la
+muestra elegida.\\
+(b) Se toma una muestra aleatoria simple de tamaño 64 para estimar $\mu.$ Calcúlese el error
+máximo cometido por esa estimación con un nivel de confianza del 90 $\%$. 
+\end{ejer}
+
+\begin{ejer}\em (2010-2011)\\
+Se supone que la presión diastólica en una determinada población se puede aproximar por una variable aleatoria con distribución normal de media 98 mm y desviación típica 15 mm. Se toma una muestra aleatoria simple de tamaño 9.\\
+a) Calcúlese la probabilidad de que la media muestral sea mayor que 100 mm.\\
+b) Si se sabe que la media muestral es mayor que 100 mm, ¿cuál es la probabilidad de que sea también menor que 104 mm?
+\end{ejer}
+
+\begin{ejer}\em (2010-2011)\\
+Para determinar el coeficiente de inteligencia $\theta$ de una persona se le hace contestar un conjunto de test y se obtiene la media de sus puntuaciones. Se supone que la calificación de cada test se puede aproximar por una variable aleatoria con distribución normal de media $\theta$ y desviación típica 10.\\
+a) Para una muestra aleatoria simple de 9 tests, se ha obtenido una media muestral igual a 110. Determínese un intervalo de confianza para $\theta$ al $95\%.$\\
+b) ¿Cuál es el número mínimo de tests que debería realizar la persona para que el valor absoluto del error en la estimación de su coeficiente de inteligencia sea menor o igual que 5, con el mismo nivel de confianza?
+\end{ejer}
+
+\begin{ejer}\em (2010-2011)\\
+Se supone que el tiempo medio diario dedicado a ver TV en una cierta zon se puede aproximar por una variable aleatoria con distribución normal de media $\mu$ y desviación típica igual a 15 minutos. Se ha tomado una muestra aleatoria simple de 400 espectadores de TV en dicha zona, obteniéndose que el tiempo medio diario dedicado a ver TV es de 3 horas.\\
+a) Determínese un intervalo de confianza para $\mu$ con un nivel de confianza del $95\%.$\\
+b) ¿Cuál ha de ser el tamaño mínimo de la muestra para que el error en la estimación de $\mu$ sea menor o igual que 3 minutos, con un nivel de confianza del $90\%$?
+\end{ejer}
+
+\begin{ejer}\em (2010-2011)\\
+Se supone que el precio (en euros) de un refresco se puede aproximar por una variable aleatoria con distribución normal de media $\mu$ y desviación típica igual a 0,09 euros. Se toma una muestra aleatoria simple del precio del refresco en 10 establecimientos y resulta:
+\[1,50; \hspace*{5mm}1,60; \hspace*{5mm}1,10; \hspace*{5mm}0,9; \hspace*{5mm}1,00; \hspace*{5mm}1,60; \hspace*{5mm}1,40; \hspace*{5mm}0,90; \hspace*{5mm}1,30; \hspace*{5mm}1,20\]
+a) Determínese un intervalo de confianza al $95\%$ para $\mu.$\\
+b) Calcúlese el tamaño mínimo que ha de tener la muestra elegida para que el valor absoluto entre la media muestral y $\mu$ sea menor o igual que 0,10 euros con probabilidad mayor o igual que 0,99.
+\end{ejer}
+
+\begin{ejer}\em (2009-2010)\\
+Para medir el coeficiente de inteligencia $\mu$ de un individuo, se realizan tests cuya calificación $X$ se supone que es una variable aleatoria con distribución normal de media igual a $\mu$ y desviación
+típica igual a 15. Un cierto individuo realiza 9 tests con independencia.\\
+a) Si la calificación media de dicbos tests es igual a 108, determínese
+un intervalo de confianza
+al $95\%$ para su coeficiente de inteligencia $\mu$.\\
+b) Si el individuo que ba realizado los 9 tests tiene un coeficiente de inteligencia $\mu=110,$ ¿cuál es la probabilidad de que obtenga una calificación media muestral mayor que 120?
+\end{ejer}
+
+\begin{ejer}\em (2009-2010)\\
+El saldo en cuenta a fin de año de los clientes de una cierta entidad bancaria se puede aproximar
+par una variable aleataria con distribución normal de desviación típica igual a 400 euros. Con
+el fin de estimar la media del saldo en cuenta a fin de año para los clientes de dicha entidad, se
+elige una muestra aleataria simple de 100 clientes.\\
+a) ¿Cuál es el nivel máximo de confianza de la estimación si se sabe que el valor absoluto de la
+diferencia entre la media muestral y la media poblacional es menar o igual que 66 euros?\\
+b) Calcúlese el tamaño mínimo necesario de la muestra que ha de observarse para que el valor
+absoluto de la diferencia entre la media muestral y la media poblacional sea menor o igual que
+40 euros, con un nivel de confianza del $95\%$.
+\end{ejer}
+
+\begin{ejer}\em (2009-2010)\\
+Se supone que el tiempo de vida útil en miles de horas (Mh) de un cierto modelo de televisor, se
+puede aproximar por una variable aleatoria con distribución normal de desviación típica igual
+a 0,5 Mh. Para una muestra aleatoria simple de 4 televisores de dicho modelo, se obtiene una
+media muestral de 19,84 Mh de vida útil.\\
+a) Hállese un intervalo de confianza al $95\%$ para el tiempo de vida útil medio de los televisores
+de dicho modelo.\\
+b) Calcúlese el tamaño muestral mínimo necesario para que el valor absoluto del error de la
+estimación de la media poblacional mediante la media muestral sea inferior a 0,2 Mh con pro-
+babilidad mayor o igual que 0,95.
+\end{ejer}
+
+
+\begin{ejer}\em (2009-2010)\\
+Se supone que el tiempo de espera de una llamada a una línea de atención al cliente de una cierta
+empresa se puede aproximar por una variable aleatoria con distribución normal de desviación
+típica igual a 0,5 minutos. Se toma una muestra aleatoria simple de 100 llamadas y se obtiene
+un tiempo medio de espera igual a 6 minutos.\\
+a) Determínese un intervalo de confianza del $95\%$ para el tiempo medio de espera de una llamada
+a dicha línea de atención al cliente.\\
+b) ¿Cuál debe ser el tamaño muestral mínimo que debe observarse para que dicho intervalo de
+confianza tenga una longitud total igual o inferior a 1 minuto?
+\end{ejer}
+
+\begin{ejer}\em (2008-2009)\\
+Se supone que el tiempo de una conversación en un teléfono móvil se puede aproximar por una
+variable aleatoria con distribución normal de desviación típica igual a 1,32 minutos. Se desea
+estimar la media del tiempo de las conversaciones mantenidas con un error inferior o igual en
+valor absoluto a 0,5 minutos y con un grado de confianza del $95\%$.\\
+a) Calcúlese el tamaño mínimo de la muestra que es necesario observar para llevar a cabo dicha
+estimación mediante la media muestral.\\
+b) Si se supone que la media del tiempo de las conversaciones es de 4,36 minutos y se elige una
+muestra aleatoria simple de 16 usuarios, ¿cuál es la probabilidad de que el tiempo medio de las
+conversaciones de la muestra esté comprendido entre 4 y 5 minutos?
+\end{ejer}
+
+\begin{ejer}\em (2008-2009)\\
+Se supone que la estancia (en días) de un paciente en un cierto hospital se puede aproximar
+por una variable aleatoria con distribución normal de desviación típica igual a 9 días. De una
+muestra aleatoria simple formada por 20 pacientes, se ha obtenido una media muestral igual a
+8 días.\\
+a) Determínese un intervalo de confianza del $95\%$ para la estancia media de un paciente en dicho
+hospital.\\
+b) ¿Cuál debe ser el tamaño muestral mínimo que ha de observarse para que dicho intervalo de
+confianza tenga una longitud total inferior o igual a 4 días?
+\end{ejer}
+
+\begin{ejer}\em (2008-2009)\\
+Se supone que el gasto mensual dedicado al ocio por una familia de un determinado país se
+puede aproximar por una variable aleatoria con distribución normal de desviación típica igual
+a 55 euros. Se ha elegido una muestra aleatoria simple de 81 familias, obteniéndose un gasto
+medio de 320 euros.\\
+a) ¿Se puede asegurar que el valor absoluto del error de la estimación del gasto medio por familia
+mediante la media de la muestra es menor que 10 euros con un grado de confianza del $95\%$?
+Razónese la respuesta.\\
+b) ¿Cuál es el tamaño muestral mínimo que debe tomarse para poder asegurarlo?
+\end{ejer}
+
+\begin{ejer}\em (2008-2009)\\
+Se supone que la cantidad de agua (en litros) recogida cada día en una estación meteorológica
+se puede aproximar por una variable aleatoria con distribución normal de desviación típica igual
+a 2 litros. Se elige una muestra aleatoria simple y se obtienen las siguientes cantidades de agua
+recogidas cada día (en litros):
+\[9,1\hspace*{5mm} 4,9\hspace*{5mm} 7,3\hspace*{5mm} 2,S\hspace*{5mm} 5,5\hspace*{5mm} 6,0\hspace*{5mm} 3,7\hspace*{5mm} S,6\hspace*{5mm} 4,5\hspace*{5mm} 7,6\]
+a) Determínese un intervalo de confianza para la cantidad media de agua recogida cada día en
+dicha estación, con un grado de confianza del $95\%$.\\
+b) Calcúlese el tamaño muestral mínimo necesario para que al estimar la media del agua recogida
+cada día en la estación meteorológica mediante la media de dicha muestra, la diferencia en valor
+absoluto entre ambos valores sea inferior a 1 litro, con un grado de confianza del 9S%.
+\end{ejer}
+
+\begin{ejer}\em (2007-2008)\\
+Se supone que la calificación en Matemáticas obtenida por los alumnos de una cierta clase es una
+variable aleatoria con distribución normal de desviación típica 1,5 puntos. Se elige una muestra
+aleatoria simple de tamaño 10 y se obtiene una suma de sus calificaciones igual a 59,5 puntos.\\
+a) Determínese un intervalo de confianza al $95\%$ para la calificación media de la clase.\\
+b) ¿Qué tamaño ha de tener la muestra para que el error máximo de la estimación sea de .0,5
+puntos, con el nivel de confianza del $95\%$?
+\end{ejer}
+
+\begin{ejer}\em (2007-2008)\\
+La duración de la vida de una determinada especie de tortuga se supone que es una variable
+aleatoria, con distribución normal de desviación típica igual a 10 años. Se toma una muestra
+aleatoria simple de 10 tortugas y se obtienen las siguientes duraciones, en años:
+\[46\hspace*{5mm} 38\hspace*{5mm} 59\hspace*{5mm} 29\hspace*{5mm} 34\hspace*{5mm} 32\hspace*{5mm} 38\hspace*{5mm} 21\hspace*{5mm} 44\hspace*{5mm} 34\]
+a) Determínese un intervalo de confianza al $95\%$ para la vida media de dicha especie de tortugas.\\
+b) ¿Cuál debe ser el tamaño de la muestra observada para que el error de la estimación de la
+vida media no sea superior a 5 años, con un nivel de confianza del $90\%$?
+\end{ejer}
+
+\begin{ejer}\em (2007-2008)\\
+El tiempo en minutos dedicado cada día a escuchar música por los estudiantes de secundaria de
+una cierta ciudad se supone que es una variable aleatoria con distribución normal de desviación
+típica igual a 15 minutos. Se toma una muestra aleatoria simple de 10 estudiantes y se obtienen
+los siguientes tiempos (en minutos):
+\[91;\hspace*{5mm} 68\hspace*{5mm} 39;\hspace*{5mm} 82;\hspace*{5mm} 55;\hspace*{5mm} 70;\hspace*{5mm} 72;\hspace*{5mm} 62;\hspace*{5mm} 54;\hspace*{5mm} 67\]
+a) Determínese un intervalo de confianza al $90\%$ para el tiempo medio diario dedicado a escuchar
+música por un estudiante.\\
+b) Calcúlese el tamaño muestral mínimo necesario para conseguir una estimación de la media
+del tiempo diario dedicado a escuchar música con un error menor que 5 minutos, con un nivel
+de confianza del $95\%$.
+\end{ejer}
+
+\begin{ejer}\em (2007-2008)\\
+El rendimiento por hectárea de las plantaciones de trigo en una cierta región, se supone que
+es una variable aleatoria con distribución normal de desviación típica igual a 1 tonelada por
+hectárea. Se ha tomado una muestra aleatoria simple de 64 parcelas con una superficie igual a
+1 hectárea cada una, obteniéndose un rendimiento medio de 6 toneladas.\\
+a) ¿Puede asegurarse que el error de estimación del rendimiento medio por hectárea es menor
+que 0,5 toneladas, con un nivel de confianza del 98$\%$? Razónese.\\
+b) ¿Qué tamaño muestral mínimo ha de tomarse para que el error en la estimación sea menor
+que 0,5 tonelada con un nivel de confianza del $95\%$?
+\end{ejer}
+
+\begin{ejer}\em (2006-2007)\\
+Se supone que la recaudación diaria de los comercios de un barrio determinado es una variable aleatoria que se puede aproximar por una distribución normal de desviación típica 328 euros. Se ha extraído una muestra de 100 comercios de dicho barrio, obteniéndose que la recaudación diaria media asciende a 1248 euros. Calcular:\\
+a) El intervalo de confianza para la recaudación diaria media con un nivel de confianza del $99\%.$\\
+b) El tamaño muestral mínimo necesario para conseguir, con un nivel de confianza del $95\%,$ un error en la estimación de la recaudación diaria menor de 127 euros.
+\end{ejer}
+
+\begin{ejer}\em (2006-2007)\\
+El tiempo invertido en cenar por cada cliente de una cadena de restaurantes es una variable aleatoria que se puede aproxima por una distribución normal con desviación típica de 32 minutos. Se quiere estimar la media de dicho tiempo con un error no superior a 10 minutos, y con un nivel de confianza del $95\%.$\\
+Determinar el tamaño mínimo muestral necesario para poder llevar a cabo dicha estimación.
+\end{ejer}
+
+\begin{ejer}\em (2006-2007)\\
+La edad a la que contraen matrimonio los hombres de la Isla Barataria es una variable aleatoria que se puede aproximar por una distribución normal de media 35 años y desviación típica de 5 años. Se elige aleatoriamente una muestra de 100 hombres de dicha isla. Sea $\overline{X}$ la media muestral de la edad de casamiento.\\
+a) ¿Cuáles son la media y la varianza de $\overline{X}$?\\
+b) ¿Cuál es la probabilidad de que la edad media de casamiento de la muestra esté comprendida entre 36 y 37 años?
+\end{ejer}
+
+\begin{ejer}\em (2006-2007)\\
+La duración de las rosas conservadas en agua en un jarrón es una variable aleatoria que se puede aproximar por una distribución normal de desviación típica de 10 horas. Se toma una muestra aleatoria simple de 10 rosas y se obtienen las siguientes duraciones (en horas):
+\[57,\ 49,\ 70,\ 40,\ 45,\ 44,\ 49,\ 32,\ 55,\ 45\]
+Hallar un intervalo de confianza al $95\%$ para la duración media de las rosas.
+\end{ejer}
+
+
+\end{document}
+
+\begin{ejer}\em ()\\
+
+\end{ejer}
+
+
+\begin{ejer}\em (2021-2022) Modelo\\
+El tiempo diario de juego con videoconsolas de un estudiante de secundaria sigue una distribución normal de
+media $\mu$ y desviación típica 0’25 horas.\\
+a) Se toma una muestra aleatoria simple de tamaño 25. Calcule la probabilidad de que la media muestral $X$ no
+supere las 2’9 horas si $\mu$ = 2’75 horas.\\
+b) Sabiendo que para una muestra aleatoria simple de 64 personas se ha obtenido un intervalo de confianza
+(2 0 9388, 3 0 0613) para $\mu$ , determine el nivel de confianza con el que se obtuvo dicho intervalo.
+\end{ejer}
+
+\begin{ejer}\em (2021-2022) Modelo\\%
+Una empresa que gestiona una aplicación de movilidad sostenible sabe que el tiempo que tardan en llegar a la
+universidad en coche los estudiantes se puede aproximar por una variable aleatoria normal de media $\mu$ minutos
+y desviación típica  $\sigma =$ 6 minutos.\\
+a) Una muestra aleatoria simple de 81 universitarios proporciona un tiempo medio de traslado hasta la
+universidad de 44 minutos. Calcule el intervalo de confianza al 90 $\%$para estimar $\mu$ .\\
+b) Determine el tamaño mínimo de una muestra aleatoria simple para obtener un intervalo de confianza para  $\mu$
+de amplitud a lo sumo de 3 minutos, con un nivel de confianza del 95 $\%$. 
+\end{ejer}
+
+\begin{ejer}\em (2020 - 2021)sepa\\
+En el envasado de un determinado producto, medido en gramos (g), se establece que la cantidad de
+producto se puede aproximar por una distribución normal con media $\mu$ y desviación  $\sigma =$ 6g.\\
+a) Se observa que el contenido en los envases del producto, en una muestra de tamaño n = 36, tiene una
+media de 500g. Calcule un intervalo de confianza al 95 $\%$para la media $\mu$ .\\
+b) Determine el tamaño de la muestra necesario para que un intervalo al 95 $\%$tenga un error menor que
+1,5g.
+\end{ejer}
+
+\begin{ejer}\em (2020-2021) sepa\\%
+El número de pasajeros en un día laborable en el metro de Madrid, medido en millones de individuos, se
+puede aproximar por una distribución normal con media $\mu$ y desviación  $\sigma =$ 0,1 millones.\\
+a) Si $\mu$ = 2, 2 y se toma una muestra al azar de 25 días, calcule la probabilidad de que $X$ no supere los
+2,25 millones de pasajeros.\\
+b) De una muestra de n = 16 días, tomados al azar, se obtuvo una media muestral de 2,19. Para esta
+muestra, calcule un intervalo de confianza para $\mu$ al 90 $\%$. 
+\end{ejer}
+
+\begin{ejer}\em (2019-2020) Modelo\\
+El número de kilómetros que un corredor entrena a la semana mientras prepara una carrera popular se puede
+aproximar por una variable aleatoria de distribución normal de media $\mu$ horas y desviación típica  $\sigma =$ 10 horas.\\
+a) Se toma una muestra aleatoria simple de 20 atletas, obteniéndose una media muestral de 30 kilómetros.
+Determine un intervalo de confianza al 95 $\%$ para $\mu$ .\\
+b) Suponga que $\mu$ = 28 kilómetros. Calcule la probabilidad de que al tomar una muestra aleatoria simple de 10
+atletas, la media muestral, $X$ , esté entre 28 y 30 kilómetros.
+\end{ejer}
+
+\begin{ejer}\em (2019 -2020) Modelo\\%
+Las calorías consumidas por un atleta durante una carrera popular se pueden aproximar por una variable
+aleatoria con distribución normal de media $\mu$ calorías y desviación típica  $\sigma =$ 300 calorías.\\
+a) Determine el tamaño mínimo que debe tener una muestra aleatoria simple para que el error máximo cometido
+en la estimación de $\mu$ sea menor de 100 calorías con un nivel de confianza del 95 $\%$. \\
+b) Suponga que $\mu$ = 3000 calorías. Calcule la probabilidad de que al tomar una muestra aleatoria simple de
+tamaño n = 50 atletas, la media de las calorías consumidas durante la carrera por los 50 atletas sea mayor que
+2700 calorías.
+\end{ejer}
+
+\begin{ejer}\em (2020-2021) juna\\%
+Una máquina de empaquetar mantequilla la corta en barras. El peso de una barra de mantequilla se puede
+aproximar por una distribución normal de media $\mu$ y desviación típica 4 gramos.\\
+a) Se analiza el peso de 15 barras. La media muestral resulta ser 254 gramos. Determine un intervalo de
+confianza con un nivel del 95 $\%$para la media poblacional.\\
+b) Para una muestra de 25 barras, se sabe que la media poblacional del peso de una barra de mantequilla es
+250 gramos. Calcule la probabilidad de que la media muestral no sea menor que 248 gramos.
+\end{ejer}
+
+\begin{ejer}\em (2020-2021) juna\\%
+Para que una determinada marca de chocolate estudie entre sus clientes la demanda de sus cajas de bombones,
+se desea estimar la proporción de cajas grandes en relación al numero de cajas de bombones vendidas, $P.$\\
+a) Sabiendo que la proporción poblacional de la demanda es $P = 0, 2,$ determine el tamaño mínimo necesario
+de una muestra de ventas de cajas de bombones para garantizar que, con una confianza del 99 $\%,$el margen
+de error en la estimación no supera el 8 $\%$. \\
+b) Tomada al azar una muestra de 200 cajas de bombones vendidas, se encontró que 25 habían sido cajas
+grandes. Determine un intervalo de confianza al 95 $\%$para la proporción de cajas grandes en relación a la venta
+total de cajas de bombones.
+\end{ejer}
+
+\begin{ejer}\em (2015 - 2016) Modelo\\%
+El tiempo diario que los adultos de una determinada ciudad dedican a actividades deportivas, expresado en
+minutos, se puede aproximar por una variable aleatoria con distribución normal de media $\mu$ desconocida y
+desviación típica  $\sigma =$ 20 minutos.\\
+a) Para una muestra aleatoria simple de 250 habitantes de esa ciudad se ha obtenido un tiempo medio de
+dedicación a actividades deportivas de 90 minutos diarios. Calcúlese un intervalo de confianza al 90 $\%$para $\mu$ .\\
+b)¿Qué tamaño mínimo debe de tener una muestra aleatoria simple para que el error máximo cometido en la
+estimación de $\mu$ por la media muestral sea menor que 1 minuto con el mismo nivel de confianza del $90\%?$
+\end{ejer}
+
+\begin{ejer}\em (2015 - 2016) Modelo\\%Claudia
+El precio (en euros) del metro cuadrado de las viviendas de un determinado municipio se puede aproximar por
+una variable aleatoria con distribución normal de media $\mu$ desconocida y desviación típica  $\sigma =$ 650 euros.\\
+a) Se toma una muestra aleatoria simple y se obtiene un intervalo de confianza (2265, 375; 2424, 625) para $\mu$ ,
+con un nivel de confianza del 95 $\%.$ Calcúlese la media muestral y el tamaño de la muestra elegida.\\
+b) Tomamos una muestra aleatoria simple de tamaño 225. Calcúlese el error máximo cometido en la estimación
+de $\mu$ por la media muestral con un nivel de confianza del 99 $\%$. 
+\end{ejer}
+
+\begin{ejer}\em (2009-2010) sepa\\
+Se considera una variable aleatoria con distribución normal de desviación típica igual a 320. Se
+toma una muestra aleatoria simple de 36 elementos.\\
+a) Calcúlese la probabilidad de que el valor absoluto de la diferencia entre la media muestral y 
+la media de la distribución normal sea mayor o igual que 50.\\
+b) Determínese un intervalo de confianza del $95\%$ para la media de la distribución normal, si la
+media muestral es igual a 4820.
+\end{ejer}
+
+\begin{ejer}\em (2009-2010) sepa\\%s
+Para estimar la media de una población con distribución normal de desviación típica igual a 5, se
+ha extraído una muestra aleatoria simple de tamaño 100, con la que se ha obtenido el intervalo
+de confianza (173,42; 175,56) para dicha media poblacional.\\
+a) Calcúlese la media de la muestra seleccionada.\\
+b) Calcúlese el nivel de confianza del intervalo obtenido.
+\end{ejer}
+
+\begin{ejer}\em (2009-2010) juna\\%
+Se supone que el peso en kilos de los rollos de cable eléctrico producidos por una cierta empresa,
+se puede aproximar por una variable aleatoria con distribución normal de desviación típica igual
+a 0,5 kg. Una muestra aleatoria simple de 9 rollos ha dado un peso medio de 10,3 kg.
+a) Determínese un intervalo de confianza al $90\%$ para el peso medio de los rollos de cable que
+produce dicha empresa.\\
+b) ¿Cuál debe ser el tamaño muestral mínimo necesario para que el valor absoluto de la diferencia
+entre la media muestral y la media poblacional sea menor o igual que 0,2 kg, con probabilidad
+igual a 0,98?
+\end{ejer}
+
+\begin{ejer}\em (2009-2010) juna\\%
+Se supone que el precio de un kilo de patatas en una cierta región se puede aproximar por una
+variable aleatoria con distribución normal de desviación típica Igual a 10 céntimos de euro. Una
+muestra aleatoria simple de tamaño 256 proporciona un precio medio del kilo de patatas igual
+a 19 céntimos de euro.\\
+a) Determínese un intervalo de confianza del $95\%$ para el precio medio de un kilo de patatas en
+la región.\\
+b) Se desea aumentar el nivel de confianza al $99\%$ sin aumentar el error de la estimación. ¿Cuál
+debe ser el tamaño muestral mínimo que ha de observarse?
+\end{ejer}
+

@@ -1,0 +1,577 @@
+\documentclass[12pt, a4paper]{amsart} 
+\usepackage[utf8]{inputenc}
+\usepackage[spanish]{babel}
+\usepackage{anysize}
+\usepackage{amsthm}
+\usepackage{multicol}
+\newcommand{\noun}[1]{\textsc{#1}}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{amscd}
+\usepackage[colorlinks=true,linktocpage=true,pagebackref=true, citecolor=red,linkcolor=blue]{hyperref}
+
+%opening
+
+\newtheorem{teorema}{Teorema}[section]
+\newtheorem{definicion}[teorema]{DefiniciÃ³n}
+\newtheorem{prop}[teorema]{ProposiciÃ³n}
+\newtheorem{obs}[teorema]{ObservaciÃ³n}
+\newtheorem{cor}[teorema]{Corolario}
+\newtheorem{ejem}[teorema]{Ejemplo}
+\newtheorem{ejems}[teorema]{Ejemplos}
+\newtheorem{ejer}{Ejercicio}
+
+\marginsize{2cm}{2cm}{1cm}{1cm}
+
+\begin{document}
+\thispagestyle{plain}
+
+\title{Probabilidad. Ejercicios PAU CCSS II}
+
+\date{}
+
+\maketitle
+
+\begin{ejer}\em (2021-2022)\\
+Sean $A$ y $B$ dos sucesos asociados a un mismo experimento aleatorio. Suponga que $P (A) = 0,7 , P (B^c ) = 0,7$ y $P (A \cap B) = 0,2 .$\\
+a) ¿Son $A$ y $B$ independientes? Justifique su respuesta.\\
+b) Calcule $P(A^c \cap B^c).$\\
+Nota: $A^c$ y $B^c$ son, respectivamente, los sucesos complementarios de $A$ y $B.$
+\end{ejer}
+
+\begin{ejer}\em (2021-2022)\\
+Un virus muy peligroso está presente en el $5\%$ de la población nacional. Se tiene un test para detectar la presencia del virus que es correcto en el $85\%$ de los casos. Es decir, entre los portadores del virus, el test ha dado positivo el $85\%$ de las veces y entre los no portadores ha dado negativo el $85\%$ de las veces.\\
+a) Si se practica el test a un individuo de la población escogido al azar, ¿cuál es la probabilidad de que dé positivo?\\
+b) Si da positivo, ¿cuál es la probabilidad de que el individuo escogido realmente sea un portador del virus?
+\end{ejer}
+
+\begin{ejer}\em (2021-2022)\\
+Supongamos que el espacio muestral de cierto experimento aleatorio es la unión de los sucesos $A$ y $B.$ Esto es, $E = A \cup B.$ Además suponga que $P (A \cap B) = 0,2$ y $P (B) = 0,7.$\\
+a) Calcule $P(A^c).$\\
+b) Calcule $P(A^c \cap B^c).$\\
+Nota: $A^c$ y $B^c$ son, respectivamente, los sucesos complementarios de $A$ y $B.$
+\end{ejer}
+
+\begin{ejer}\em (2021-2022)\\
+Tres amigas (Ana, Berta y Carla) elaboran una lista para hacer una fiesta sorpresa a una compañera de trabajo. Ana enviará el $30\%$ de las invitaciones, Berta el $40\%$ y Carla las restantes. El $2\%$ de los nombres de la lista de Ana son incorrectos y las invitaciones no llegarán a su destino. En las listas de Berta y Carla, los porcentajes de nombres incorrectos son $3\%$ y $1\%,$ respectivamente.\\
+a) Calcule la probabilidad de que una invitación no llegue a su destino.\\
+b) Si una invitación no llegó a su destino, ¿cuál es la probabilidad de que la haya enviado Ana?
+\end{ejer}
+
+\begin{ejer}\em (2021-2022)\\
+Sean $A$ y $B$ sucesos independientes de un experimento aleatorio con $P(B) = 1/2.$\\
+a) Calcule $P(A)$ para el caso en que $P(A \cup B) = 3/4.$\\
+b) Calcule $P(A)$ para el caso en que $P(A \cap B^c) = 1/4.$\\
+Nota: $B^c$ denota el suceso complementario de $B.$
+\end{ejer}
+
+\begin{ejer}\em (2021-2022)\\
+Ganar en el juego del gambón depende de la actitud de los participantes. El $50\%$ de ellos son pesimistas y se sienten perdedores antes de haber jugado. El $30\%$ no lo ve claro y el resto son optimistas y se sienten ganadores antes de jugar. La probabilidad de que ganen los primeros es 0,5, de que ganen los segundos es 0,7 y de que ganen los últimos es 0,9.\\
+a) ¿Cuál es la probabilidad de que un jugador escogido al azar gane el juego?\\
+b) ¿Cuál es la probabilidad de que el ganador sea alguien que se haya sentido un perdedor antes de haber jugado el juego?
+\end{ejer}
+
+\begin{ejer}\em (2021-2022)\\
+Sean $A$ y $B$ sucesos asociados a un experimento aleatorio tales que $P (A) = 0,6, P (A|B) = 0,4 y P (A|B^c) = 0,8 ;$ siendo $B^c$ el suceso complementario de $B.$\\
+a) Calcule $P(B).$\\
+b) ¿Son $A$ y $B$ independientes? Justifique su respuesta.
+\end{ejer}
+
+\begin{ejer}\em (2021-2022)\\
+Una carta escogida al azar es eliminada (sin ser vista) de un mazo de 52 cartas de póker, en el que hay 13 cartas de cada palo (diamantes, corazones, picas y tréboles). Una vez eliminada, se escoge al azar una carta, entre las que quedan en el mazo, y esta segunda carta es observada.\\
+a) Calcule la probabilidad de que la carta observada sea de diamantes.\\
+b) Si la carta observada no es diamantes, calcule la probabilidad de que la carta eliminada tampoco lo haya sido.
+\end{ejer}
+
+\begin{ejer}\em (2020-2021)\\
+Sean $A$ y $B$ dos sucesos de un experimento aleatorio, tales que $P (A) = 0, 5 , P (\overline{B}) = 0, 8$ y $P (\overline{A} \cup \overline{B}) = 0, 9.$\\
+a) Estudie si los sucesos $A$ y $B$ son independientes.\\
+b) Calcule $P (\overline{A}|\overline{B}) .$
+\end{ejer}
+
+\begin{ejer}\em (2020-2021)\\
+Un colegio tiene alumnos matriculados que residen en dos municipios distintos, A y B, siendo el número de alumnos matriculados residentes en el municipio A el doble de los del municipio B. Se sabe que la probabilidad de fracaso escolar si se habita en el municipio A es de 0,02, mientras que esa probabilidad si se habita en el municipio B es de 0, 06 . Calcule la probabilidad de que un alumno de dicho colegio elegido al azar:\\
+a) No sufra fracaso escolar.\\
+b) Sea del municipio A si se sabe que ha sufrido fracaso escolar.
+\end{ejer}
+
+\begin{ejer}\em (2020-2021)\\
+El $60\%$ de los empleados de una multinacional teletrabaja desde que se declaró la situación de emergencia
+sanitaria por Covid-19. De estos, el $30\%$ padece trastornos del sueño, mientras que este porcentaje se eleva al
+$80\%$ para aquellos empleados que no teletrabajan. Seleccionado un empleado al azar, calcule la probabilidad
+de que:\\
+a) No tenga trastornos del sueño y teletrabaje.\\
+b) No teletrabaje, sabiendo que no tiene trastornos del sueño.
+\end{ejer}
+
+\begin{ejer}\em (2020-2021)\\
+Se consideran los sucesos $A$ y $B$ de un experimento aleatorio tales que:\\
+\[P(A) = 0, 5\hspace*{5mm} P(\overline{B} | A) = 0, 4\hspace*{5mm}P(A \cup B) = 0,9\]
+a) Calcule $P(B | \overline{A})$.\\
+b) Determine si son dependientes o independientes los sucesos A y B. Justifique la respuesta.
+\end{ejer}
+
+\begin{ejer}\em (2019-2020)\\
+Sean $A$ y $B$ sucesos de un experimento aleatorio tales que: $P (A|B) =\frac{1}{4}, , P (B) =\frac{1}{6}y P (A) =\frac{2}{3}.$ Calcule:\\
+a) $P (A \cup \overline{B}).$\\
+b) $P ((\overline{A} \cap B) \cup (\overline{B} \cap A)).$
+Nota: $\overline{S}$ denota el suceso complementario del suceso $S.$
+\end{ejer}
+
+\begin{ejer}\em (2019-2020)\\
+En un instituto se decide que los alumnos y alumnas solo pueden utilizar un único color (azul o negro) al realizar
+los exámenes. Dos de cada tres exámenes están escritos en azul. La probabilidad de que un examen escrito en
+azul sea de una alumna es de 0,7. La probabilidad de que un examen esté escrito en negro y sea de un alumno
+es 0,2. Se elige un examen al azar. Determine la probabilidad de que\\
+a) Sea el examen de un alumno.\\
+b) Sabiendo que está escrito en negro, sea de un alumno.
+\end{ejer}
+
+\begin{ejer}\em (2019-2020)\\
+Una asociación de senderismo ha programado tres excursiones para el mismo fin de semana. El $40\%$ de los
+socios irá al nacimiento del río Cuervo, el 35$\%$ a las Hoces del río Duratón y el resto al Cañón del río Lobos.
+La probabilidad de lluvia en cada una de estas zonas se estima en 0,5, 0,6 y 0,45, respectivamente. Elegido un
+socio al azar:\\
+a) Calcule la probabilidad de que en su excursión no llueva.\\
+b) Si en la excursión realizada por este socio ha llovido, ¿cuál es la probabilidad de que este socio haya ido al
+nacimiento del río Cuervo?
+\end{ejer}
+
+\begin{ejer}\em (2019-2020)\\
+Un estudio sobre la obsolescencia programada en una marca de electrodomésticos reveló que la probabilidad
+de que un microondas se estropee durante el período de garantía es 0,02. Esta probabilidad se eleva a 0,05 para
+sus hornos eléctricos y se sabe que estos sucesos son independientes. Cuando el microondas se ha estropeado
+en el período de garantía, la marca amplía esta por dos años más. El 40$\%$ de los clientes con garantía ampliada
+no conserva la factura de compra durante los dos años de ampliación.\\
+a) Un cliente compra un horno y un microondas de esta marca. Obtenga la probabilidad de que se estropee al
+menos uno de ellos durante el período de garantía.\\
+b) Un cliente ha comprado un microondas. Calcule la probabilidad de que se le estropee durante el período de
+garantía y conserve la factura durante los dos años de ampliación.
+\end{ejer}
+
+\begin{ejer}\em (2018-2019)\\
+Los escolares de un cierto colegio de Madrid fueron encuestados acerca de su alimentación y de su ejercicio
+físico. Una proporción de $2/5$ hacían ejercicio regularmente y $2/3$ siempre desayunaban. Además, entre los que
+siempre desayunan, una proporción de $9/25$ hacían ejercicio regularmente. Se elige al azar un escolar de ese
+colegio\\
+a) ¿Es independiente que siempre desayune y que haga ejercicio regularmente?\\
+b) Calcúlese la probabilidad de que no siempre desayune y no haga ejercicio regularmente.
+\end{ejer}
+
+\begin{ejer}\em (2018-2019)\\
+Sean A y B dos sucesos con $P(A) = 0,03, P(B | A) = 0,04, P(B | \overline{A}) = 0,06.$ Calcúlese:\\
+a) $P(A | B)$\\
+b) $P( \overline{A}| \overline{B})$
+\end{ejer}
+
+\begin{ejer}\em (2018-2019)\\
+Sean $A$ y $B$ dos sucesos de un experimento aleatorio tales que $P(A) = 0,06, P(B) = 0,08$ y $P(A \cap \overline{B}) = 0,01.$\\
+a) Calcúlese la probabilidad de que ocurra el suceso $A$ si no ha ocurrido el suceso $B$ y determínese si los
+sucesos $A$ y $\overline{B}$ son independientes. $\overline{B}$ denota el complementario del suceso $B.$\\
+b) Obténgase la probabilidad de que ocurra alguno de los dos sucesos, $A$ o $B.$
+\end{ejer}
+
+\begin{ejer}\em (2018-2019)\\
+De un estudio realizado en una región, se deduce que la probabilidad de que un niño de primaria juegue con
+consolas de videojuegos más tiempo del recomendado por los especialistas es 0'60. Entre estos niños, la
+probabilidad de fracaso escolar se eleva a 0'30 mientras que, si no juegan más tiempo del recomendado, la
+probabilidad de fracaso escolar es 0'15. Seleccionado un niño al azar de esta región,\\
+a) Obténgase la probabilidad de que tenga fracaso escolar.\\
+b) Si tiene fracaso escolar, determínese cuál es la probabilidad de que no juegue con estas consolas más tiempo
+del recomendado.
+\end{ejer}
+
+\begin{ejer}\em (2017-2018)\\
+Se va a celebrar una carrera popular. Entre los participantes, dos de cada tres hombres y tres de cada cuatro
+mujeres han entrenado para la carrera.\\
+a) Se eligen al azar y de forma independiente un hombre y una mujer de entre los participantes. Calcúlese la
+probabilidad de que alguno de ellos haya entrenado para la carrera.\\
+b) Si el 65$\%$ de los participantes son hombres y el 35$\%$ mujeres y se elige un participante al azar, calcúlese la
+probabilidad de que sea hombre sabiendo que ha entrenado para la carrera.
+\end{ejer}
+
+\begin{ejer}\em (2017-2018)\\
+Sean $A$ y $B$ dos sucesos de un experimento aleatorio tales que $P(A) = 0'4, P(B) = 0'6$ y $P(A \cup B) = 0'8.$
+Calcúlese:\\
+a) $P(\overline{A} \cap B).$\\
+b) $P(\overline{A \cup B} | A).$\\
+Nota: $\overline{S}$ denota el suceso complementario del suceso $S.$
+\end{ejer}
+
+\begin{ejer}\em (2017-2018)\\
+En una agencia de viajes se ha observado que el 75$\%$ de los clientes acude buscando un billete de transporte,
+el 80$\%$ buscando una reserva de hotel. Se ha observado además que el 65$\%$ busca las dos cosas. Elegido un
+cliente de dicha agencia al azar, calcúlese la probabilidad de que:\\
+a) Acuda buscando un billete de transporte o una reserva de hotel.\\
+b) Sabiendo que busca una reserva de hotel, también busque un billete de transporte.
+\end{ejer}
+
+\begin{ejer}\em (2017-2018)\\
+En una comunidad de vecinos en el 70$\%$ de los buzones aparece en primer lugar un nombre masculino y en el
+30$\%$ restante un nombre femenino. En dicha comunidad, la probabilidad de que un hombre trabaje es de 0'8 y
+la probabilidad de que lo haga una mujer es 0'7. Se elige un buzón al azar, calcúlese la probabilidad de que el
+primer nombre en el buzón corresponda a:\\
+a) Una persona que trabaja.\\
+b) Un hombre, sabiendo que es de una persona que trabaja.
+\end{ejer}
+
+\begin{ejer}\em (2016-2017)\\
+Una empresa fabrica dos modelos de ordenadores portátiles A y B, siendo la producción del modelo A el doble
+que la del modelo B. Se sabe que la probabilidad de que un ordenador portátil del modelo A salga defectuoso
+es de 0'02, mientras que esa probabilidad en el modelo B es de 0'06. Calcúlese la probabilidad de que un
+ordenador fabricado por dicha empresa elegido al azar:\\
+a) No salga defectuoso.\\
+b) Sea del modelo A, si se sabe que ha salido defectuoso.
+\end{ejer}
+
+\begin{ejer}\em (2016-2017)\\
+La probabilidad de que cierto río esté contaminado por nitratos es 0'6, por sulfatos es 0'4, y por ambos es 0'2.
+Calcúlese la probabilidad de que dicho río:\\
+a) No esté contaminado por nitratos, si se sabe que está contaminado por sulfatos.\\
+b) No esté contaminado ni por nitratos ni por sulfatos.
+\end{ejer}
+
+\begin{ejer}\em (2016-2017)\\
+Una empresa de reparto de paquetería clasifica sus furgonetas en función de su antigüedad. El 25$\%$ de sus
+furgonetas tiene menos de dos años de antigüedad, el 40$\%$ tiene una antigüedad entre dos y cuatro años y el
+resto tiene una antigüedad superior a cuatro años. La probabilidad de que una furgoneta se estropee es 0'01 si
+tiene una antigüedad inferior a dos años; 0'05 si tiene una antigüedad entre dos y cuatro años y 0'12 si tiene una
+antigüedad superior a cuatro años. Se escoge una furgoneta al azar de esta empresa. Calcúlese la probabilidad
+de que la furgoneta escogida:\\
+a) Se estropee.\\
+b) Tenga una antigüedad superior a cuatro años sabiendo que no se ha estropeado.
+\end{ejer}
+
+\begin{ejer}\em (2016-2017)\\
+El 30$\%$ de los individuos de una determinada población son jóvenes. Si una persona es joven, la probabilidad
+de que lea prensa al menos una vez por semana es 0'20. Si una persona lee prensa al menos una vez por
+semana, la probabilidad de que no sea joven es 0'9. Se escoge una persona al azar. Calcúlese la probabilidad
+de que esa persona:\\
+a) No lea prensa al menos una vez por semana.\\
+b) No lea prensa al menos una vez por semana o no sea joven.
+\end{ejer}
+
+\begin{ejer}\em (2015-2016)\\
+Sean A y B dos sucesos de un experimento aleatorio tales que $P(A) = 3 / 4, P(A | B) = 3 / 4$ y $P(B | A) = 1 / 4.$\\
+a) Demuéstrese que A y B son sucesos independientes pero no incompatibles.\\
+b) Calcúlese $P(\overline{A} | \overline{B}).$\\
+Nota: $\overline{S}$ denota el suceso complementario del suceso S.
+\end{ejer}
+
+\begin{ejer}\em (2015-2016)\\
+Para efectuar cierto diagnóstico, un hospital dispone de dos escáneres, a los que denotamos como A y B. El
+65$\%$ de las pruebas de diagnóstico que se llevan a cabo en ese hospital se realizan usando el escáner A, el
+resto con el B. Se sabe además que el diagnóstico efectuado usando el escáner A es erróneo en un 5$\%$ de los
+casos, mientras que el diagnóstico efectuado usando el escáner B es erróneo en un 8$\%$ de los casos. Calcúlese
+la probabilidad de que:\\
+a) El diagnóstico de esa prueba efectuado a un paciente en ese hospital sea erróneo.\\
+b) El diagnóstico se haya efectuado usando el escáner A, sabiendo que ha resultado erróneo.
+\end{ejer}
+
+\begin{ejer}\em (2015-2016)\\
+Una conocida orquesta sinfónica está compuesta por un 55$\%$ de varones y un 45$\%$ de mujeres. En la orquesta
+un 30$\%$ de los instrumentos son de cuerda. Un 25$\%$ de las mujeres de la orquesta interpreta un instrumento de
+cuerda. Calcúlese la probabilidad de que un intérprete de dicha orquesta elegido al azar:\\
+a) Sea una mujer si se sabe que es intérprete de un instrumento de cuerda.\\
+b) Sea intérprete de un instrumento de cuerda y sea varón.
+\end{ejer}
+
+\begin{ejer}\em (2015-2016)\\
+Tenemos dos urnas A y B. La urna A contiene 5 bolas: 3 rojas y 2 blancas. La urna B contiene 6 bolas: 2 rojas y
+4 blancas. Se extrae una bola al azar de la urna A y se deposita en la urna B. Seguidamente se extrae una bola
+al azar de la urna B. Calcúlese la probabilidad de que:\\
+a) La segunda bola extraída sea roja.\\
+b) Las dos bolas extraídas sean blancas.
+\end{ejer}
+
+\begin{ejer}\em (2014-2015)\\
+Se consideran los sucesos $A, B$ y $C$ de un experimento aleatorio tales que : $P(A) = 0, 09; P(B) = 0, 07$ y $P(\overline{A} \cup \overline{B}) = 0, 97.$ Además los sucesos $A$ y $C$ son incompatibles.\\
+a) Estúdiese si los sucesos A y B son independientes.\\
+b) Calcúlese $P(A \cap B | C).$\\
+Nota: $\overline{S}$ denota el suceso complementario del suceso S.
+\end{ejer}
+
+\begin{ejer}\em (2014-2015)\\
+La probabilidad de que un trabajador llegue puntual a su puesto de trabajo es $3/4.$ Entre los trabajadores que
+llegan tarde, la mitad va en transporte público. Calcúlese la probabilidad de que:\\
+a) Un trabajador elegido al azar llegue tarde al trabajo y vaya en transporte público.\\
+b) Si se eligen tres trabajadores al azar, al menos uno de ellos llegue puntual. Supóngase que la puntualidad de
+cada uno de ellos es independiente de la del resto.
+\end{ejer}
+
+\begin{ejer}\em (2014-2015)\\
+En una bolsa hay cuatro bolas rojas y una verde. Se extraen de forma consecutiva y sin reemplazamiento dos bolas. Calcúlese la probabilidad de que:\\
+a) Las dos bolas sean del mismo color.\\
+b) La primera bola haya sido verde si la segunda bola extraída es roja.
+\end{ejer}
+
+\begin{ejer}\em (2014-2015)\\
+Sean A y B sucesos de un experimento aleatorio tales que $P(A \cap B) = 0, 3; P(A \cap \overline{B}) = 0, 2$ y $P(B) = 0,7.$ Calcúlese:\\
+a) $P(A \cup B).$\\
+b) $P(B | \overline{A}).$\\
+Nota: $\overline{S}$ denota el suceso complementario del suceso $S.$
+\end{ejer}
+
+\begin{ejer}\em (2013-2014)\\
+En la representación de navidad de los alumnos de 3º de primaria de un colegio hay tres tipos de papeles: 7 son de animales, 3 de personas y 12 de árboles. Los papeles se asignan al azar, los alumnos escogen por orden alfabético sobres cerrados en los que está escrito el papel que les ha correspondido.\\
+a) Calcúlese la probabilidad de que a los dos primeros alumnos les toque el mismo tipo de papel.\\
+b) Calcúlese la probabilidad de que el primer papel de persona le toque al tercer alumno de la lista.
+\end{ejer}
+
+\begin{ejer}\em (2013-2014)\\
+Al $80\%$ de los trabajadores en educación (E) que se jubilan sus compañeors les hacen una fiesta de despedida (FD), también al $60\%$ de los trabajadores de justicia (J) y al $30\%$ de los de sanidad (S). En el último año se jubilaron el mismo número de trabajadores en educación que en sanidad, y el doble en educación que en justicia.\\
+a) Calcúlese la probabilidad de que a un trabajador de estos sectores, que se jubiló, le hicieran una fiesta.\\
+b) Sabemos que a un trabajador jubilado elegido al azar de entre estos sectores, no le hicieron fiesta. Calcúlese la probabilidad de que fuera de sanidad.
+\end{ejer}
+
+\begin{ejer}\em (2013-2014)\\
+Sean $A$ y $B$ dos sucesos de un espacio muestral tales que: $P(A)=0,4; P(A\cup B)=0,5; P(B|A)=0,5.$ Calcúlense:\\
+a) $P(B)$\\
+b) $P(A|\overline{B})$\\
+\textit{Nota: $\overline{S}$ denota al suceso complementario del suceso $S.$}
+\end{ejer}
+
+\begin{ejer}\em (2013-2014)\\
+Se dispone de un dado cúbico equilibrado y dos urnas $A$ y $B.$ La urna $A$ contiene 3 bolas rojas y 2 negras; la urna $B$ contiene 2 rojas y 3 negras. Lanzamos el dado: si el número obtenido es 1 ó 2 extraemos una bola de la urna $A;$ en caso contrario extraemos una bola de la urna $B.$\\
+a) ¿Cuál es la probabilidad de extraer una bola roja?\\
+b) Si la bola extraída es roja, ¿cuál es la probabilidad de que sea de la urna $A$?
+\end{ejer}
+
+\begin{ejer}\em (2012-2013)\\
+En un avión de línea regular existe clase turista y clase preferente. La clase turista ocupa las dos terceras
+partes del pasaje y la clase preferente el resto. Se sabe que todos los pasajeros que viajan en la clase
+preferente saben hablar inglés y que el $40\%$ de los pasajeros que viajan en clase turista no saben hablar
+inglés. Se elige un pasajero del avión al azar.\\
+a) Calcúlese la probabilidad de que el pasajero elegido sepa hablar inglés.\\
+b) Si se observa que el pasajero elegido sabe hablar inglés, ¿cuál es la probabilidad de que viaje en la clase
+turista?
+\end{ejer}
+
+\begin{ejer}\em (2012-2013)\\
+Una caja de caramelos contiene 7 caramelos de menta y 10 de fresa. Se extrae al azar un caramelo y se
+sustituye por dos del otro sabor. A continuación se extrae un segundo caramelo. Hállese la probabilidad
+de que:\\
+a) El segundo caramelo sea de fresa.\\
+b) El segundo caramelo sea del mismo sabor que el primero
+\end{ejer}
+
+\begin{ejer}\em (2012-2013)\\
+Al analizar las actividades de ocio de un grupo de trabajadores fueron clasificados como deportistas o
+no deportistas y como lectores o no lectores. Se sabe que el 55$\%$ de los trabajadores se clasificaron como
+deportistas o lectores, el 40$\%$ como deportistas y el 30$\%$ como lectores. Se elige un trabajador al azar:\\
+a) Calcúlese la probabilidad de que sea deportista y no sea lector.\\
+b) Sabiendo que el trabajador elegido es lector, calcúlese la probabilidad de que sea deportista.
+\end{ejer}
+
+\begin{ejer}\em (2012-2013)\\
+Una tienda de trajes de caballero trabaja con tres sastres. Un 5$\%$ de los clientes atendidos por el sastre A no
+queda satisfecho, tampoco el 8$\%$ de los atendidos por el sastre B ni el 10$\%$ de los atendidos por el sastre C.
+El 55$\%$ de los arreglos se encargan al sastre A, el 30$\%$ al B y el 15$\%$ restante al C. Calcúlese la probabilidad
+de que:\\
+a) Un cliente no quede satisfecho con el arreglo.\\
+b) Si un cliente no ha quedado satisfecho, le haya hecho el arreglo el sastre A.
+\end{ejer}
+
+\begin{ejer}\em (2011-2012)\\
+Se dispone de cinco cajas opacas. Una contiene una bola blanca, dos contienen una bola negra y
+las otras dos están vacías. Un juego consiste en ir seleccionando al azar y secuencialmente una
+caja no seleccionada previamente hasta obtener una que contenga una bola. Si la bola de la caja
+seleccionada es blanca, el jugador gana; si es negra, el jugador pierde.\\
+(a) Calcúlese la probabilidad de que el jugador gane.\\
+(b) Si el jugador ha perdido, ¿cuál es la probabilidad de que haya seleccionado una sola caja?
+\end{ejer}
+
+\begin{ejer}\em (2011-2012)\\
+Se consideran dos sucesos A y B tales que:
+\[P(A)=\frac{1}{3}\hspace*{1cm} P(B|A)=\frac{1}{4}\hspace*{1cm} P(A\cup B)=\frac{1}{2}\]
+Calcúlese razonadamente:\\
+a) $P(A\cap B)$\hspace*{1cm} 
+b) $P(B)$\hspace*{1cm} 
+c) $P(\overline{B}|A)$\hspace*{1cm} 
+d) $P(\overline{A}|\overline{B})$\\
+\textit{Nota: $\overline{S}$ denota al suceso complementario del suceso $S. P(S|T)$ denota la probabilidad del suceso $S$ condicionada al suceso $T.$}
+\end{ejer}
+
+\begin{ejer}\em (2011-2012)\\
+En un tribunal de la prueba de acceso a las enseñanzas universitarias oficiales de grado se han
+examinado 80 alumnos del colegio A, 70 alumnos del colegio B y 50 alumnos del colegio C. La
+prueba ha sido superada por el 80$\%$ de los alumnos del colegio A, el 90$\%$ de los del colegio B y
+por el 82$\%$ de los del colegio C.\\
+(a) ¿Cuál es la probabilidad de que un alumno elegido al azar haya superado la prueba?\\
+(b) Un alumno elegido al azar no ha superado la prueba, ¿cuál es la probabilidad de que
+pertenezca al colegio B?
+\end{ejer}
+
+\begin{ejer}\em (2011-2012)\\
+Se consideran dos sucesos A y B tales que:
+\[P(A\cap B)=0,1\hspace*{1cm} P(\overline{A}\cap \overline{B})=0,6\hspace*{1cm} P(A|B)=0,5\]
+Calcúlense:\\
+a) $P(B)$\hspace*{1cm} 
+b) $P(A\cup B)$\hspace*{1cm} 
+c) $P(A)$\hspace*{1cm} 
+d) $P(\overline{B}|\overline{A})$\\
+\textit{Nota: $\overline{S}$ denota al suceso complementario del suceso $S. P(S|T)$ denota la probabilidad del suceso $S$ condicionada al suceso $T.$}
+\end{ejer}
+
+\begin{ejer}\em (2010-2011)\\
+Se supone que la probabilidad de que nazca una niña es 0,49 y la probabilidad de que nazca un niño es 0,51. Una familia tiene dos hijos.\\
+a) ¿Cuál es la probabilidad de que ambos sean niños, condicionada por que el segundo sea niño?\\
+b) ¿Cuál es la probabilidad de que ambos sean niños, condicionada por que al menos uno sea niño?
+\end{ejer}
+
+\begin{ejer}\em (2010-2011)\\
+Se dispone de tres urnas, A, B y C. La urna A contiene 1 bola blanca y 2 bolas negras, la urna B contiene 2 bolas blancas y 1 bola negra y la urna C contiene 3 bolas blancas y 3 bolas negras. Se lanza un dado equilibrado y si sale 1, 2 o 3 se escoge la urna A, si sale el 4 se escoge la urna B  si sale 5 o 6 la urna C. A continuación, se extrae una bola de la urna elegida.\\
+a) ¿Cuál es la probabilidad de que la bol extraída sea blanca?\\
+b) Si se sabe que la bola extraída ha sido blanca, ¿cuál es la probabilidad de que la bola haya sido extraída de la urna C?
+\end{ejer}
+
+\begin{ejer}\em (2010-2011)\\
+En un edificio inteligente dotado de energía solar y eólica, se sabe que la energía suministrada cada día proviene de placas solares con probabilidad 0,4, de molinos eólicos con probabilidad 0,26 y de ambos tipos de instalaciones con probabilidad 0,12. Elegido un día al azar, calcúlese la probabilidad de que la energía sea suministrada al edificio:\\
+a) por alguna de las dos instalaciones,\\
+b) solamente por una de las dos instalaciones.
+\end{ejer}
+
+\begin{ejer}\em (2010-2011)\\
+En un cierto punto de una autopista está situado un radar que controla la velocidad de los vehículos que pasan por dicho punto. La probabilidad de que el vehículo que pase por el radar sea un coche es de 0,5, de que sea un camión es 0,3 y de que sea una motocicleta es 0,2. La probabilidad de que cada uno de los tres tipos de vehículos supere al pasar por el radar la velocidad máxima permitida es 0,06 para un coche, 0,02 para un camión´y 0,12 para una motocicleta. En un momento dado, un vehículo pasa por el radar.\\
+a) Calcúlese la probabilidad de que este vehículo supere la velocidad máxima permitida.\\
+b) Si el vehículo en cuestión ha superado la velocidad máxima permitida, ¿cuál es la probabilidad de que se trate de una motocicleta?
+\end{ejer}
+
+\begin{ejer}\em (2009-2010)\\%Claudia
+En una residencia universitaria viven 183 estudiantes, de los cuales 130 utilizan la biblioteca. De estos últimos, 70 estudiantes hacen uso de la lavandería, mientras que sólo 20 de los que no usan la biblioteca utilizan la lavandería. Se elige un estudiante de la residencia al azar.\\
+a) ¿Cuál es la probabilidad de que utilice la lavandería?\\
+b) Si el estudiante elegido no utiliza la lavandería, ¿cuál es la probabilidad de que utilice la biblioteca?
+\end{ejer}
+
+\begin{ejer}\em (2009-2010)\\
+Sean A y B dos sucesos de un experimento aleatorio, tales que $P(A) = 0,6.$ Calcúlese $P(A \cap \overline{B})$
+en cada uno de los siguientes casos:\\
+a) A y B son mutuamente excluyentes.\\
+b) $A \subset B$\\
+c) $B \subset A$ y $P(B)=0,3.$\\
+d) $P(A\cap B)=0,1$
+\end{ejer}
+
+\begin{ejer}\em (2009-2010)\\%
+Sean A y B dos sucesos de un experimento aleatorio tales que $P(A)=0,5; P(B)=0,4; P(A\cap B)=0,1.$ Calcúlense cada una de las siguientes probabilidades:
+\begin{center}
+a) $P(A\cup B);$\hspace*{5mm} b) $P(\overline{A}\cup \overline{B});$\hspace*{5mm} c) $P(A|B)$;\hspace*{5mm} d) $P(\overline{A}\cap B)$
+\end{center}
+Nota.- $\overline{A}$ representa al suceso complementario de $A.$
+\end{ejer}
+
+\begin{ejer}\em (2009-2010)\\
+Se dispone de un dado equilibrado de seis caras, que se lanza seis veces con independencia.
+Calcúlese la probabilidad de cada uno de los sucesos siguientes:\\
+a) Obtener al menos un seis en el total de los seis lanzamientos.\\
+b) Obtener un seis en el primer y último lanzamientos y en los restantes lanzalnientos uIluúmero
+distinto de seis.
+\end{ejer}
+
+\begin{ejer}\em (2008-2009)\\%
+En un cierto banco el 30$\%$ de los créditos concedidos son para vivienda, el 50$\%$ se destinan a empresas y el 20$\%$ son para consumo. Se sabe además que de los créditos concedidos a vivienda, y el 10$\%$ resultan impagados, de los créditos concedidos a empresas son impagados el 20$\%$ de los créditos concedidos para consumo resultan impagados el $10\%.$\\
+a) Calcúlese la probabilidad de que un crédito elegido al azar sea pagado.\\
+b) ¿Cuál es la probabilidad de que un crédito elegido al azar se haya destinado a consumo, sabiendo que se ha pagado?
+\end{ejer}
+
+\begin{ejer}\em (2008-2009)\\
+La probabilidad de que a un habitante de un cierto pueblo de la Comunidad de Madrid le guste la música moderna es igual a 0,55; la probabilidad de que le guste la música clásica es igual a 0,40 y la probabilidad de que no le guste ninguna de las dos es igual a 0,25. Se elige al azar un habitante de dicho pueblo. Calcúlese la probabilidad de que le guste:\\
+a) al menos uno de los dos tipos de música.\\
+b) la música clásica y también la música moderna.\\
+c) sólo la música clásica.\\
+d) sólo la música moderna.
+\end{ejer}
+
+\begin{ejer}\em (2008-2009)\\
+Se consideran tres sucesos $A, B$ y $C$ de un experimento aleatorio tales que:
+\[P(A)=\frac{1}{2}; P(B)=\frac{1}{3}; P(C)=\frac{1}{4}; P(A\cup B\cup C)=\frac{2}{3};P(A\cap B\cap C)=0; P(A|B)=P(C|A)=\frac{1}{2}.\]
+a) Calcúlese $P(C\cap B).$\\
+b) Calcúlese $P(\overline{A}\cup\overline{B}\cup\overline{C}).$ La notación $\overline{A}$ representa al suceso complementario de $A.$
+\end{ejer}
+
+\begin{ejer}\em (2008-2009)\\%
+Para la construcción de un luminoso de feria se dispone de un contenedor con 200 bombillas blancas, 120 bombillas azules y SO bombillas rojas. La probabilidad de que una bombilla del contenedor no funcione es igual a O,O1 si la bombilla es blanca, es igual a O,02 si la bombilla es azul e igual a 0,03 si la bombilla es roja. Se elige al azar una bombilla del contenedor.\\
+a) Calcúlese la probabilidad de que la bombilla elegida no funcione.\\
+b) Sabiendo que la bombilla elegida no funciona, calcúlese la probabilidad de que dicha bombilla sea azul.
+\end{ejer}
+
+\begin{ejer}\em (2007-2008)\\%
+Se consideran dos actividades de ocio: A = ver televisión y B = visitar centros comerciales. En una ciudad, la probabilidad de que un adulto practique A es igual a 0,46; la probabilidad de que practique B es igual a 0,33 y la probabilidad de que practique A y B es igual a 0,15.\\
+a) Se selecciona al azar un adulto de dicha ciudad. ¿Cuál es la probabilidad de que no practique ninguna de las dos actividades anteriores?\\
+b) Se elige al azar un individuo de entre los que practican alguna de las dos actividades. ¿Cuál es la probabilidad de que practique las dos actividades?
+\end{ejer}
+
+\begin{ejer}\em (2007-2008)\\%
+Se supone que las señales que emite un determinado telégrafo son \textit{punto} y \textit{raya} y que el telégrafo envía un \textit{punto} con probabilidad $\frac{3}{7}$ y una \textit{raya} con probabilidad $\frac{4}{7}$. Los errores en la transmisión pueden hacer que cuando se envíe un \textit{punto} se reciba una \textit{raya} con probabilidad $\frac{1}{4}$ y que cuando se envíe una \textit{raya} se reciba un \textit{punto} con probabilidad $\frac{1}{3}.$\\
+a) Si se recibe una \textit{raya}, ¿cuál es la probabilidad de que se hubiera enviado realmente una \textit{raya}?\\
+b) Suponiendo que las señales se envían con independencia, ¿cuál es la probabilidad de que si se recibe \textit{punto}-\textit{punto} se hubiera enviado \textit{raya}-\textit{raya}?
+\end{ejer}
+
+\begin{ejer}\em (2007-2008)\\
+En un juego consistente en lanzar dos monedas indistinguibles y equilibradas y un dado de seis caras equilibrado, un jugador gana si obtiene dos caras y un número par en el dado, o bien exactamente una cara y un número mayor o igual que cinco en el dado.\\
+a) Calcúlese la probabilidad de que un jugador gane.\\
+b) Se sabe que una persona ha ganado. ¿Cuál es la probabilidad de que obtuviera dos caras al lanzar las monedas?
+\end{ejer}
+
+\begin{ejer}\em (2007-2008)\\%
+Se consideran dos sucesos $A$ y $B$ de un experimento aleatorio, tales que:
+\[P(A)=\frac{1}{4}, P(B)=\frac{1}{3}, P(A\cup B)=\frac{1}{2}.\]
+a) ¿Son $A$ y $B$ sucesos independientes? Razónese.\\
+b) Calcúlese $P(\overline{A}|\overline{B}).$\\
+Nota.- La notación $\overline{A}$ representa al suceso complementario de $A.$
+\end{ejer}
+
+\begin{ejer}\em (2006-2007)\\%
+En el departamento de lácteos de un supermercado se encuentran mezclados y a la venta 100 yogures de la marca A, 60 de la marca B y 40 de la marca C. La probabilidad de que un yogur esté caducado es 0,01 para la marca A; 0,02 para la marca B y 0,03 para la marca C. Un comprador elige un yogur al azar.\\
+a) Calcular la probabilidad de que el yogur esté caducado.\\
+b) Sabiendo que el yogur elegido está caducado, ¿cuál es la probabilidad de que sea de la marca B?
+\end{ejer}
+
+\begin{ejer}\em (2006-2007)\\%
+Sean $A$ y $B$ dos sucesos aleatorios tales que
+\[P(A)=\frac{3}{4}, P(B)=\frac{1}{2}, P(\overline{A}\cap \overline{B})=\frac{1}{20}\]
+Calcular:
+\[P(A\cup B), P(A\cap B), P(\overline{A}|B), P(\overline{B}|A).\]
+\end{ejer}
+
+\begin{ejer}\em (2006-2007)\\%
+Según cierto estudio, el 40$\%$ de los hogares europeos tiene contratado el acceso a internet, el 33$\%$ tiene contratada la televisión por cable, y el 20$\%$ disponen de ambos servicios. Se selecciona un hogar europeo al azar.\\
+a) ¿Cuál es la probabilidad de que sólo tenga contratada la televisión por cable?\\
+b) ¿Cuál es la probabilidad de que no tenga contratado ninguno de los dos servicios?
+\end{ejer}
+
+\begin{ejer}\em (2006-2007)\\%
+Los pianistas de Isla Sordina se forman en tres conservatorios, C1, C2 y C3, que forman al $40\%,$ 35$\%$ y 25$\%$ de los pianistas, respectivamente. Los porcentajes de pianistas virtuosos que producen estos conservatorios son del $5\%,$ 3$\%$ y $4\%,$ respectivamente. Se selecciona un pianista al azar.\\
+a) Calcular la probabilidad de que sea virtuoso.\\
+b) El pianista resulta ser virtuoso. Calcular la probabilidad de que se haya formado en el primer conservatorio (C1).
+\end{ejer}
+
+
+\begin{ejer}\em (2015-2016)\\%Modelo
+En un polígono industrial se almacenan 30000 latas de refresco procedentes de las fabricas A, B y C a partes iguales. Se sabe que en 2016 caducan 1800 latas de la fábrica A, 2400 procedentes de la B y 3000 que proceden de la fábrica C.\\
+a) Calcúlese la probabilidad de que una lata elegida al azar caduque en 2016.\\
+b) Se ha elegido una lata de refresco aleatoriamente y caduca en 2016, ¿cuál es la probabilidad de que proceda de la fábrica A?
+\end{ejer}
+
+\begin{ejer}\em (2009-2010)\\%sea
+Se consideran los siguientes sucesos:\\
+\em Suceso $A:$ La economía de un cierto país está en recesión.\\
+Suceso $B:$ Un indicador económico muestro que la economía de dicho país está en recesión.\em \\
+Se sabe que
+\[P(A)=0,005; \hspace*{1cm} P(B|A)=0,95; \hspace*{1cm} P(\overline{B}|\overline{A})=0,96\]
+
+\vspace*{5mm}
+
+a) Calcúlese la probabilidad de que el indicador económico muestre que la economía del país no está en recesión y además la economía del país esté en recesión.\\
+b) Calcúlese la probabilidad de que el indicador económico muestre que la economía del país está en recesión.\\
+Nota.- La notación $\overline{A}$ representa al suceso complementario de $A.$
+\end{ejer}
+
+
+\end{document}
+
+\begin{ejer}\em ()\\
+
+\end{ejer}

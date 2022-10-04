@@ -1,0 +1,954 @@
+\documentclass[12pt, a4paper]{amsart} 
+\usepackage[utf8]{inputenc}
+\usepackage[spanish]{babel}
+\usepackage{anysize}
+\usepackage{amsthm}
+\usepackage{multicol}
+\newcommand{\noun}[1]{\textsc{#1}}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{amscd}
+\usepackage[colorlinks=true,linktocpage=true,pagebackref=true, citecolor=red,linkcolor=blue]{hyperref}
+\usepackage{eurosym}
+%opening
+
+\newtheorem{teorema}{Teorema}[section]
+\newtheorem{definicion}[teorema]{Definición}
+\newtheorem{prop}[teorema]{Proposición}
+\newtheorem{obs}[teorema]{Observación}
+\newtheorem{cor}[teorema]{Corolario}
+\newtheorem{ejem}[teorema]{Ejemplo}
+\newtheorem{ejems}[teorema]{Ejemplos}
+\newtheorem{ejer}{Ejercicio}
+
+\marginsize{2cm}{2cm}{1cm}{1cm}
+
+\begin{document}
+
+
+\title{Ejercicios de álgebra PAU - Matemáticas aplicadas a las ciencias sociales II}
+\maketitle
+\date{}
+\thispagestyle{empty}
+
+\begin{ejer}\em (2021-2022)\\
+Sea $a\in\mathbb{R}.$ Considere las matrices
+\[
+A=\begin{pmatrix}
+-a & 1 & -2\\
+0 & -1 & 1\\
+a & a & -1
+\end{pmatrix}\hspace*{1cm} 
+B=\begin{pmatrix}
+1 & 2 & 1\\
+0 & -1 & 0\\
+1 & 1 & 2
+\end{pmatrix}\hspace*{1cm}
+Y=\begin{pmatrix}
+1\\
+0\\
+2
+\end{pmatrix}
+\]
+a) Determine los valores de $a$ para que $A$ tenga inversa.\\
+b) Calcule los valores de $a$ para que la solución del sistema $(A - B)X = Y$ sea
+\[\begin{pmatrix}
+0\\
+-1\\
+0
+\end{pmatrix}.\]
+\end{ejer}
+
+\begin{ejer}\em (2021-2022)\\
+Considere el sistema de ecuaciones lineales dependiente del parámetro  $a\in\mathbb{R}$
+\begin{equation*}
+\left \{ \begin{matrix} x+2y+z=2
+\\ ax-z=0
+\\ay+z=a \end{matrix}\right. 
+\end{equation*}
+a) Determine a para que el sistema NO sea compatible determinado.\\
+b) Resuelva el sistema para $a = 2.$
+\end{ejer}
+
+\begin{ejer}\em (2021-2022)\\
+Sea $a\in\mathbb{R}.$ Considere las matrices
+\[
+A=\begin{pmatrix}
+-a & 1 & 1\\
+0 & -1 & 1\\
+a & 1 & 1
+\end{pmatrix}\hspace*{1cm} 
+B=\begin{pmatrix}
+1 & 1 & 1\\
+-1 & 1 & 0\\
+1 & 1 & 2
+\end{pmatrix}\hspace*{1cm}
+X=\begin{pmatrix}
+x\\
+y\\
+z
+\end{pmatrix}
+Y=\begin{pmatrix}
+1\\
+0\\
+2
+\end{pmatrix}
+\]
+a) Determine los valores de $a$ para que $A$ tenga inversa.\\
+b) Calcule, para $a=1,$ la solución del sistema $(A - B)X = Y.$ 
+\end{ejer}
+
+\begin{ejer}\em (2021-2022)\\
+Considere el sistema de ecuaciones lineales dependiente del parámetro  $a\in\mathbb{R}$
+\begin{equation*}
+\left \{ \begin{matrix} x+ay+z=2
+\\ x-az=0
+\\x+y+z=2 \end{matrix}\right. 
+\end{equation*}
+a) Discuta la compatibilidad del sistema para los diferentes valores de $a.$\\
+b) Resuelva el sistema para $a = 0.$
+\end{ejer}
+
+\begin{ejer}\em (2021-2022)\\
+Sea $a\in\mathbb{R}.$ Considere las matrices
+\[
+A=\begin{pmatrix}
+0 & 1 & 0\\
+1 & 0 & 0\\
+0 & 1 & 0
+\end{pmatrix}\]
+y $B = A + aI,$ donde $I$ es la matriz identidad de orden 3 y $a$ es un número real.\\
+a) Calcule $A(A^2 - A^4 )$\\
+b) Calcule los valores de $a$ para que las matrices $B$ y $AB$ sean invertibles.
+\end{ejer}
+
+\begin{ejer}\em (2021-2022)\\
+Considere el sistema de ecuaciones lineales dependiente del parámetro  $a\in\mathbb{R}$
+\begin{equation*}
+\left \{ \begin{matrix} 2x+z=1
+\\ ax-y+z=0
+\\ay+z=a+1 \end{matrix}\right. 
+\end{equation*}
+a) Discuta la compatibilidad del sistema para los diferentes valores de $a.$\\
+b) Resuelva el sistema para $a = 0.$
+\end{ejer}
+
+\begin{ejer}\em (2021-2022)\\
+Se considera la matriz
+\[A=\begin{pmatrix}
+2 & 0 & 1
+\\a & -1 & 1
+\\ 0 & a & 1 \end{pmatrix}\]
+a) Determine losvalores del parámetro real $a$ para los cuales la matriz $A$ es invertible.\\
+b) Calcule $A^{-1}$ para $a = 1.$
+\end{ejer}
+
+\begin{ejer}\em (2021-2022)\\
+Se considera el sistema de ecuaciones lineales dependiente del parámetro $a\in\mathbb{R}:$
+\begin{equation*}
+\left \{ \begin{matrix} x+ay+z=a
+\\ ax-y-az=0
+\\x+y+z=1 \end{matrix}\right. 
+\end{equation*}
+a) Discuta la compatibilidad del sistema para los diferentes valores de $a.$\\
+b) Resuelva el sistema para $a = 2.$
+\end{ejer}
+
+\begin{ejer}\em (2020-2021)\\
+Se considera el sistema de ecuaciones lineales dependiente del parámetro real $a:$
+\[
+\left \{ \begin{matrix}
+x+2ay+z=0
+\\ -x-ay=1
+\\  -y-z=-a
+\end{matrix}  \right.
+\]
+a) Discuta el sistema en función de los valores del parámetro $a.$\\
+b) Resuelva el sistema para $a = 3.$
+
+\end{ejer}
+
+\begin{ejer}\em (2020-2021)\\
+Se consideran las matrices $A=\begin{pmatrix}
+a & 1 & 1
+\\ -1 & 2 & 0
+\\ 0 & -a & -1
+\end{pmatrix} \text{ y } B=\begin{pmatrix}
+-2
+\\ 1
+\\ -1
+\end{pmatrix}$\\
+a) Calcule los valores del parámetro real $a$ para los cuales la matriz $A$ tiene inversa.\\
+b) Para $a = 2$ calcule, si existe, la matriz $X$ que satisface $AX = B .$
+\end{ejer}
+
+\begin{ejer}\em (2020-2021)\\
+Se considera el sistema de ecuaciones lineales dependiente del parámetro real $a:$
+\[
+\left \{ \begin{matrix}
+x+y-z=-1
+\\ x-y+a^2z=3
+\\  2x-y+z=4
+\end{matrix}  \right.
+\]
+a) Discuta el sistema en función de los valores del parámetro $a.$\\
+b) Resuelva el sistema para $a = 1.$
+\end{ejer}
+
+\begin{ejer}\em (2020-2021)\\
+Se considera la matriz $A$
+\[
+A=\begin{pmatrix}
+a & 0 & 1
+\\ 0 & b & 0
+\\ 1 & 0 & a
+\end{pmatrix}
+\]
+a) Determine los valores de los parámetros reales $a$ y $b$ para los que $A = A^{-1}.$\\
+b) Para $a = b = 2,$ calcule la matriz inversa de $A.$
+\end{ejer}
+
+\begin{ejer}\em (2019-2020)\\
+Se considera el sistema de ecuaciones lineales dependiente del parámetro real $a\in\mathbb{R}:$
+\[
+\left. \begin{matrix}
+x-ay=1
+\\ ax-4y-z=2
+\\  2x+ay-z=a-4
+\end{matrix}  \right \}
+\]
+a) Discuta el sistema para los diferentes valores de $a .$\\
+b) Resuelva el sistema para $a = 3.$
+\end{ejer}
+
+\begin{ejer}\em (2019-2020)\\
+Dada la matriz $A=\begin{pmatrix}
+2 & 5a
+\\ a & 3\end{pmatrix}$ con $a\in\mathbb{R}.$\\
+a) Determine los valores del parámetro $a$ para los que se verifica la igualdad $A^2 - 5A = -I ,$ donde $I$ es la matriz identidad.\\
+b) Calcule $A^{-1}$ para $a = -1 .$
+\end{ejer}
+
+\begin{ejer}\em (2019-2020)\\
+Se considera la matriz $A$ dada por
+\[A=\begin{pmatrix}
+3 & 1 & 2
+\\ 0 & m & 0
+\\ 1 & -1 & 2
+\end{pmatrix}\]
+a) Calcule el valor del parámetro real $m$ para que $A^2 - 5A = -4I ,$ siendo $I$ la matriz identidad.\\
+b) Para $m = 1 ,$ indique si la matriz $A$ es invertible y, en caso afirmativo, calcule su inversa.
+\end{ejer}
+
+\begin{ejer}\em (2019-2020)\\
+Se considera el sistema de ecuaciones lineales dependiente del parámetro real $a :$
+\[
+\left. \begin{matrix}
+x+ay=0
+\\ x+2z=0
+\\  x+ay+(a+1)z=a
+\end{matrix}  \right \}
+\]
+a) Discuta el sistema en función de los valores del parámetro $a .$\\
+b) Resuelva el sistema para $a = 0 .$
+\end{ejer}
+
+\begin{ejer}\em (2018-2019)\\
+Se considera la matriz
+\[A=\begin{pmatrix}
+3 & 8 & 10
+\\ 2 & 1 & 2
+\\ 4 & 3 & 6
+\end{pmatrix}\]
+y la matriz $B$ es tal que
+\[
+(AB)^{-1}=\frac{1}{2}\begin{pmatrix}
+0 & 3 & -1
+\\ 0 & -1 & 1
+\\ 2 & -3 & -3
+\end{pmatrix}
+\]
+a) Calcúlese $A^{-1} .$\\
+b) Calcúlese $B^{-1}.$
+\end{ejer}
+
+\begin{ejer}\em (2018-2019)\\
+Sean las matrices
+\[A=\begin{pmatrix}
+a & 4 & 2 
+\\ 1 & a & 0
+\\ 1 & 2 & 1
+\end{pmatrix}, \hspace*{1cm} B=\begin{pmatrix}
+9
+\\ 1
+\\3
+\end{pmatrix}\]
+a) Calcúlense los valores de a para los cuales la matriz $A$ no tiene matriz inversa.\\
+b) Para $a = 3,$ calcúlese la matriz inversa de $A$ y resuélvase la ecuación matricial $A \cdot X = B.$
+\end{ejer}
+
+\begin{ejer}\em (2018-2019)\\
+Se considera el siguiente sistema de ecuaciones lineales dependiente de un parámetro real $m:$
+\[
+\left. \begin{matrix}
+-x+y+z=0
+\\ x+my-z=0
+\\  x-y-mz=0
+\end{matrix}  \right \}
+\]
+a) Determínense los valores del parámetro real $m$ para que el sistema tenga soluciones diferentes a la solución trivial $x = y = z = 0.$\\
+b) Resuélvase el sistema para $m = 1.$
+\end{ejer}
+
+\begin{ejer}\em (2018-2019)\\
+Se consideran las siguientes matrices
+\[A=\begin{pmatrix}
+k & 1 & 2 
+\\ 1 & 4 & 3
+\\ 0 & 0 & 7
+\end{pmatrix} \hspace*{1cm} B=\begin{pmatrix}
+1 & 0 & 1
+\\ 0 & 1 & 0
+\\4 & 0 & 3
+\end{pmatrix} \hspace*{1cm} C=\begin{pmatrix}
+1 & 1
+\\ 0 & -1
+\\ 1 & 0
+\end{pmatrix}\]
+a) Obténgase el valor de la constante $k$ para que el determinante de la matriz $A - 2B$ sea nulo.\\
+b) Determínese si las matrices $C$ y $(C^t \cdot C),$ donde $C^t$ denota la matriz traspuesta de $C,$ son invertibles. En caso afirmativo, calcúlense las inversas.
+\end{ejer}
+
+\begin{ejer}\em (2017-2018)\\
+Se considera el sistema de ecuaciones dependiente del parámetro real a:
+\[
+\left. \begin{matrix}
+x+3y+z=a
+\\ 2x+ay-6z=8
+\\  x-3y-5z=4
+\end{matrix}  \right \}
+\]
+a) Discútase en función de los valores del parámetro $a.$\\
+b) Resuélvase para $a = 4.$
+\end{ejer}
+
+\begin{ejer}\em (2017-2018)\\
+Considérense las matrices $A=\begin{pmatrix}
+0 & 1 
+\\ 1 & 0
+\\ 0 & 1
+\end{pmatrix} \text{ y } B=\begin{pmatrix}
+3 
+\\ 2
+\\ 3
+\end{pmatrix}$\\
+a) Calcúlese la matriz $[(A\cdot A^t)^2-2A\cdot A^t]^{11}$\\
+b) Determínense el número de filas y columnas de la matriz $X$ que verifica que $X\cdot A^t = B^t.$ Justifíquese si $A^t$ es una matriz invertible y calcúlese la matriz $X .$\\
+Nota: $M^t$ denota la matriz traspuesta de la matriz $M.$
+\end{ejer}
+
+\begin{ejer}\em (2017-2018)\\
+Se considera el sistema de ecuaciones dependiente del parámetro real a:
+\[
+\left. \begin{matrix}
+x+ay+z=1
+\\ ax+y+(a-1)z = a
+\\  x+y+z=a+1
+\end{matrix}  \right \}
+\]
+a) Discútase en función de los valores del parámetro $a.$\\
+b) Resuélvase para $a = 3.$
+\end{ejer}
+
+\begin{ejer}\em (2017-2018)\\
+Considérense las matrices $A=\begin{pmatrix}
+3 & 1 
+\\ 8 & 3
+\end{pmatrix} \hspace*{1cm} B=\begin{pmatrix}
+3 & -1
+\\ -8 & 3
+\end{pmatrix}$\\
+a) Compruébese que $B$ es la matriz inversa de $A.$\\
+b) Calculése la matriz $X$ tal que $A \cdot X = B.$
+\end{ejer}
+
+\begin{ejer}\em (2016-2017)\\
+Considérense las matrices:
+\[A=\begin{pmatrix}
+1 & -2 
+\\ -1 & 1
+\end{pmatrix} \hspace*{1cm} B=\begin{pmatrix}
+1 & 3
+\\ 2 & -1
+\end{pmatrix} \hspace*{1cm} C=\begin{pmatrix}
+-1 & 0
+\\ 3 & 1
+\end{pmatrix}\]
+a) Determínese la matriz $C^{40}.$\\
+b) Calcúlese la matriz $X$ que verifica
+\[X\cdot A + 3B=C\]
+\end{ejer}
+
+\begin{ejer}\em (2016-2017)\\
+Considérese el sistema de ecuaciones dependiente del parámetro real $a:$
+\[
+\left \{ \begin{matrix}
+x -2y -z=-2
+\\ -2x -ax =2
+\\  y+az=-2
+\end{matrix}  \right.
+\]
+a) Discútase en función de los valores del parámetro $a.$\\
+b) Resuélvase para $a = 4.$
+\end{ejer}
+
+\begin{ejer}\em (2016-2017)\\
+Considérese el sistema de ecuaciones dependiente del parámetro real $a:$
+\[
+\left \{ \begin{matrix}
+x -ay+2z=0
+\\ ax-4y -4z=0
+\\ (2-a)x+3y-2z=0
+\end{matrix}  \right.
+\]
+a) Discútase en función de los valores del parámetro $a.$\\
+b) Resuélvase para $a = 3.$
+\end{ejer}
+
+\begin{ejer}\em (2016-2017)\\
+Considérense las matrices:
+\[
+A=\begin{pmatrix}
+1 & 2 & -k
+\\ 1 & -2 & 1
+\\ k & 2 & -1
+\end{pmatrix} \hspace*{1cm} B=\begin{pmatrix}
+1 & 1 & 1
+\\ 0 & 2 & 2
+\\0 & 0 & 3
+\end{pmatrix}\]
+a) Discútase para qué valores del parámetro real $k$ la matriz $A$ tiene matriz inversa.\\
+b) Determínese para $k = 0$ la matriz $X$ que verifica la ecuación $A \cdot X = B.$
+\end{ejer}
+
+\begin{ejer}\em (2015-2016)\\
+Se considera la matriz $A=\begin{pmatrix}
+k & -1 & 0
+\\ -7 & k & k
+\\ -1 & -1 & k\end{pmatrix}$\\
+a) Estúdiese para qué valores del parámetro real $k$ la matriz $A$ tiene inversa.\\
+b) Determínese, para $k = 1,$ la matriz $X$ tal que $X\cdot A = Id.$\\
+Nota: $Id$ denota la matriz identidad de tamaño $3 \times 3.$
+\end{ejer}
+
+\begin{ejer}\em (2015-2016)\\
+Se considera el sistema de ecuaciones dependientes del parámetro real $a:$
+\[
+\left. \begin{matrix}
+(a-1)x+y+z=1
+\\ x+(a-1)y+(a-1)z=1
+\\ x+az=1
+\end{matrix}  \right \}
+\]
+a) Discútase el sistema según los valores de $a.$\\
+b) Resuélvase el sistema para $a = 3.$
+\end{ejer}
+
+\begin{ejer}\em (2015-2016)\\
+Se considera el sistema de ecuaciones lineales:
+\[
+\left \{ \begin{matrix}
+x+2y+z=1
+\\x+2y+3z=0
+\\ x+ay+2z=0
+\end{matrix}\right.
+\]
+a) Discútase para los diferentes valores del parámetro $a\in\mathbb{R}.$\\
+b) Resuélvase para $a = 0.$
+\end{ejer}
+
+\begin{ejer}\em (2015-2016)\\
+Considérense las matrices
+\[
+A=\begin{pmatrix}
+3 & 2 & 2
+\\ 1 & 7 & 4
+\\ 2 & 4 & 2
+\end{pmatrix} \hspace*{1cm} B=\begin{pmatrix}
+2 & 1
+\\ 5 & 3
+\\0 & 1
+\end{pmatrix} \hspace*{1cm} C=\begin{pmatrix}
+2 & 4 & 8
+\\ 0 & 1 & 1
+\\0 & 0 & 1
+\end{pmatrix}
+\]
+a) Calcúlese el determinante de la matriz
+\[
+A\cdot C \cdot C^T\cdot A^{-1}
+\]
+b) Calcúlese la matriz $M = A \cdot B.$ ¿Existe $M^{-1}$?\\
+Nota: $C^T$ denota la matriz traspuesta de la matriz $C.$
+\end{ejer}
+
+\begin{ejer}\em (2014-2015)\\
+Considérese el sistema de ecuaciones dependiente del parámetro real $a:$\\
+\[
+\left \{ \begin{matrix}
+x+y+az=a+1
+\\ax+y+z=1
+\\ x+ay+az=a
+\end{matrix}\right.
+\]
+a) Discútase el sistema en función de los valores de $a.$\\
+b) Resuélvase el sistema para $a=2.$
+\end{ejer}
+
+\begin{ejer}\em  (2014-2015)\\
+Se consideran las matrices
+\[
+A=\begin{pmatrix}
+3 & 1
+\\ -6 & -2
+\end{pmatrix} \text{ y } B=\begin{pmatrix}
+1 & -3
+\\ -1 & 2
+\end{pmatrix}
+\]
+a) Calcúlese $A^{15}$ e indíquese si la matriz $A$ tiene inversa.\\
+b) Calcúlese el determinante de la matriz $(B\cdot A^tB^{-1}-2\cdot Id)^3.$\\
+\em Nota: $A^t$ denota la matriz traspuesta de $A.$ $Id$ es la matriz identidad de orden 2.
+\end{ejer}
+
+\begin{ejer}\em  (2014-2015)\\
+Sea la matriz
+\[
+A=\begin{pmatrix}
+2 & 2 & 0
+\\ 0 & 3 & 2
+\\ -1 & k & 2
+\end{pmatrix}
+\]
+a) Estúdiese el rango de $A$ según los valores del parámetro real $k.$\\
+b) Calcúlese, si existe, la matriz inversa de $A$ para $k=3.$
+\end{ejer}
+
+\begin{ejer}\em  (2014-2015)\\
+Se considera el sistema de ecuaciones dependiente del parámetro real $a:$
+\[
+\left \{ \begin{matrix}
+3x+y-z=8
+\\ 2x+az=3
+\\ x+y+z=2
+\end{matrix}\right.
+\]
+a) Discútase en función de los valores del parámetro $a.$\\
+b) Resuélvase para $a=1.$
+\end{ejer}
+
+\begin{ejer}\em  (2013-2014)\\
+Considérese la matriz 
+\[A=\begin{pmatrix}
+1 & 0 \\ 0 & 0\\ 0 & 1
+\end{pmatrix}
+\]
+a) Calcúlese $(A\cdot A^t)^{200}.$\\
+b) Calcúlese $(A\cdot A^t - 3I)^{-1}$\\
+\em Nota: $A^t$ denota a la traspuesta de la matriz $A.$ I es la matriz identidad de orden 3.
+\end{ejer}
+
+\begin{ejer}\em  (2013-2014)\\
+Considérese el siguiente sistema de ecuaciones dependiente del parámetro real $\lambda :$
+\[
+\left \{ \begin{matrix}
+2x-\lambda y+z=-\lambda
+\\ 4x-2\lambda y +2z=\lambda-3
+\end{matrix}\right.
+\]
+a) Determínense los valores del parámetro real $\lambda$ que hacen que el sistema sea incompatible.\\
+b) Resuélvase el sistema para $\lambda=1.$
+\end{ejer}
+
+\begin{ejer}\em  (2013-2014)\\
+Se considera el sistema de ecuaciones dependiente del parámetro real $a:$\\
+\[
+\left. \begin{matrix}
+x+y+az=2
+\\ 3x+4y+2z=a
+\\ 2x+3y-z=-1
+\end{matrix}  \right \}
+\]
+a) Discútase el sistema según los diferentes valores de $a.$\\
+b) Resuélvase el sistema en el caso $a=-1.$
+\end{ejer}
+
+\begin{ejer}\em  (2013-2014)\\
+Sean las matrices $A=\begin{pmatrix}
+2 & 1\\ -1 & 0\\ 1 & -2
+\end{pmatrix}\text{ y } B=\begin{pmatrix}
+3 & 1\\ 0 & 2 \\ -1 & 0
+\end{pmatrix}$\\
+a) Calcúlese $(A^tB)^{-1},$ donde $A^t$ denota a la matriz traspuesta de la matriz $A.$\\
+b) Resuélvase la ecuación matricial $A\cdot \begin{pmatrix}
+x\\y
+\end{pmatrix}=\begin{pmatrix}
+0\\-1\\ 5
+\end{pmatrix}.$
+\end{ejer}
+
+\begin{ejer}\em (2012-2013)\\
+Se considera el siguiente sistema lineal de ecuaciones, dependiente del parámetro real $a:$
+\begin{equation*}
+\left \{ \begin{matrix} ax-2y=2
+\\ 3x-y-z=-1
+\\ x+3y+z=1 \end{matrix}\right. 
+\end{equation*}
+a) Discútase en función de los valores del parámetro $a\in\mathbb{R}.$\\
+b) Resuélvase para $a=1.$
+\end{ejer}
+
+\begin{ejer}\em (2012-2013)\\
+Se consideran las matrices $A=\begin{pmatrix}
+0 & 2
+\\ 3 & 0 \end{pmatrix}$ y $B=\begin{pmatrix}
+-3 & 8
+\\ 3 & -5 \end{pmatrix}.$\\
+a) Calcúlese la matriz inversa de $A.$\\
+b) Resuélvase la ecuación matricial $A\cdot X=B-I,$ donde $I$ es la matriz identidad.
+\end{ejer}
+
+
+\begin{ejer}\em (2012-2013)\\
+Dada la matriz \begin{equation*}
+A=\begin{pmatrix}
+3 & 2 & 0
+\\ 1 & 0 & -1
+\\ 1 & 1 & 1
+\end{pmatrix}.
+\end{equation*}
+a) Calcúlese $A^{-1}.$\\
+b) Resuélvase el sistema de ecuaciones dado por: \begin{equation*}
+A\cdot \begin{pmatrix}
+x\\ y\\ z
+\end{pmatrix}= \begin{pmatrix}
+1\\ 0\\ 1
+\end{pmatrix}.
+\end{equation*}
+\end{ejer}
+
+\begin{ejer}\em  (2012-2013)\\
+Se considera el siguiente sistema lineal de ecuaciones, dependiente del parámetro real $k:$
+\begin{equation*}
+\left \{ \begin{matrix} kx+y=0
+\\ x+ky-2z=1
+\\ kx-3y+kz=0 \end{matrix}\right. 
+\end{equation*}
+a) Discútase el sistema para los diferentes valores de $k.$\\
+b) Resuélvase el sistema para $k=1.$
+\end{ejer}
+
+\begin{ejer}\em (2011-2012)\\
+Se considera el siguiente sistema lineal de ecuaciones, dependiente del parámetro real $a:$
+\begin{equation*}
+\left \{ \begin{matrix} x+ay-7z=4a-1
+\\ x+(1+a)y -(a+6)z =3a+1
+\\ ay-6z=3a-2 \end{matrix}\right. 
+\end{equation*}
+a) Discútase el sistema para los diferentes valores de $a.$\\
+b) Resuélvase el sistema en el caso en que tenga infinitas soluciones.\\
+c) Resuélvase el sistema para $a=-3.$
+\end{ejer}
+
+\begin{ejer}\em (2011-2012)\\
+Un estadio de fútbol con capacidad para 72000 espectadores está lleno durante la celebración de un partido entre los equipos A y B. Unos espectadores son socios del equipo A, otros lo son del equipo B, y el resto no son socios de ninguno de los equipos que están jugando. A través de la venta de localidades sabemos lo siguiente:\\
+a) No hay espectadores que sean socios de ambos equipos simultáneamente.\\
+b) Por cada 13 socios de alguno de los dos equipos hay 3 espectadores que no son socios.\\
+c) Los socios del equipo B superan en 6500 a los socios del equipo A.\\
+¿Cuántos socios de cada equipo hay en el estadio viendo el partido?
+\end{ejer}
+
+
+\begin{ejer}\em (2010-2011)\\
+Se considera el sistema lineal de ecuaciones dependiente del parámetro real $a:$
+\begin{equation*}
+\left \{ \begin{matrix} ax+y+z=a
+\\ ay+z=1
+\\ ax+y+az=a \end{matrix}\right. 
+\end{equation*}
+a) Discútase el sistema para los distintos valores de $a.$\\
+b) Resuélvase el sistema en el caso en que tenga infinitas soluciones.\\
+c) Resuélvase el sistema para $a=3.$
+\end{ejer}
+
+\begin{ejer}\em (2010-2011)\\
+Se consideran las matrices:
+\begin{equation*}
+A=\begin{pmatrix}
+-1 & 0 & 1
+\\ 3 & k & 0
+\\ -k & 1 & 4 \end{pmatrix};
+B=\begin{pmatrix}
+3 & 1
+\\ 0 & 3
+\\ 2 & 0 \end{pmatrix}
+\end{equation*}
+a) Calcúlense los valores de $k$ para los cuales la matriz $A$ no es invertible.\\
+b) Para $k=0,$ calcúlese la matriz inversa $A^{-1}.$\\
+c) Para $k=0,$ resuélvase la ecuación matricial $AX=B.$
+\end{ejer}
+
+\begin{ejer}\em (2010-2011)\\
+Se consideran las matrices:
+\[A=\begin{pmatrix}
+0 & 0 \\
+1 & 1
+\end{pmatrix};\hspace*{1cm} B=\begin{pmatrix}
+1 & a\\
+1 & b
+\end{pmatrix};\hspace*{1cm}  I=\begin{pmatrix}
+1 & 0\\
+0 & 1
+\end{pmatrix};\hspace*{1cm} O=\begin{pmatrix}
+0 & 0\\
+0 & =
+\end{pmatrix}\]
+a) Calcúlense $a,b$ para que se verifique la igualdad $AB=BA.$\\
+b) Calcúlense $c,d$ para que se verifique la igualdad $A^2+cA+dI=O.$\\
+c) Calcúlense todas las soluciones del sistema lineal
+\[(A-I)\begin{pmatrix}
+x\\y
+\end{pmatrix}=\begin{pmatrix}
+0\\0
+\end{pmatrix}\]
+\end{ejer}
+
+\begin{ejer}\em (2009-2010)\\
+Se considera el siguiente sistema lineal de ecuaciones, dependiente del parámetro real $k:$
+\begin{equation*}
+\left \{ \begin{matrix} x-y+kz=1
+\\ 2x-ky+z=2
+\\ x-y-z=k-1 \end{matrix}\right. 
+\end{equation*}
+a) Discútase el sistema para los distintos valores de $k.$\\
+b) Resuélvase el sistema para el valor de $k$ para el cual tiene infinitas soluciones.\\
+c) Resuélvase el sistema para $k=3.$
+\end{ejer}
+
+\begin{ejer}\em (2009-2010)\\
+Se considera el siguiente sistema lineal de ecuaciones, dependiente del parámetro real $k:$
+\begin{equation*}
+\left \{ \begin{matrix} kx-2y+7z=8
+\\ x-y+kz=2
+\\ -x+y+z=2 \end{matrix}\right. 
+\end{equation*}
+a) Discútase el sistema para los distintos valores de $k.$\\
+b) Resuélvase el sistema en el caso en que tenga infinitas soluciones.\\
+c) Resuélvase el sistema para $k=0.$
+\end{ejer}
+
+\begin{ejer}\em (2009-2010)\\
+Se considera el siguiente sistema lineal de ecuaciones dependiente del parámetro real $a:$
+\begin{equation*}
+\begin{pmatrix}
+1
+\\ 2
+\\ 1 \end{pmatrix} x +
+\begin{pmatrix}
+1 & -1
+\\ -3 & 2
+\\ -4 & a \end{pmatrix}
+\begin{pmatrix}
+y
+\\ z \end{pmatrix}=
+\begin{pmatrix}
+1
+\\ 22
+\\ 7a \end{pmatrix}
+\end{equation*}
+a) Discútase el sistema para los distintos valores del parámetro $a.$\\
+b) Resuélvase el sistema para el valor de $a$ para el cual el sistema tiene infinitas soluciones.\\
+c) Resuélvase el sistema para $a=0.$
+\end{ejer}
+
+\begin{ejer}\em (2009-2010)\\
+Se consideran las matrices:
+\begin{equation*}
+A=\begin{pmatrix}
+a-3 & 2 & -1
+\\2 & a & 2
+\\ 2a & 2(a+1) & a+1 \end{pmatrix};
+X=\begin{pmatrix}
+x
+\\ y 
+\\ z \end{pmatrix};
+O=\begin{pmatrix}
+0
+\\ 0
+\\0 \end{pmatrix}
+\end{equation*}
+a) Calcúlense los valores de $a$ para los cuales no existe la matriz inversa $A^{-1}.$\\
+b) Para $a=-1,$ calcúlese la matriz inversa  $A^{-1}.$\\
+c) Para $a=0,$ calcúlense todas las soluciones del sistema lineal $AX=O.$
+\end{ejer}
+
+
+\begin{ejer}\em (2008-2009)\\
+Se considera el siguiente sistema lineal de ecuaciones, dependiente del parámetro real $k:$
+\begin{equation*}
+\left \{ \begin{matrix} x+y+kz=4
+\\ 2x-y+2z=5
+\\ -x+3y-z=0 \end{matrix}\right. 
+\end{equation*}
+a) Discútase el sistema para los distintos valores de $k.$\\
+b) Resuélvase el sistema en el caso en que tenga infinitas soluciones.\\
+c) Resuélvase el sistema para $k=0.$
+\end{ejer}
+
+\begin{ejer}\em  (2008-2009)\\
+Se considera el siguiente sistema lineal de ecuaciones, dependiente del parámetro real $k:$
+\begin{equation*}
+\left \{ \begin{matrix} x+y+z=3
+\\ x+ky+z=3
+\\ kx-3z=6 \end{matrix}\right. 
+\end{equation*}
+a) Discútase el sistema para los distintos valores de $k.$\\
+b) Resuélvase el sistema en el caso en que tenga infinitas soluciones.\\
+c) Resuélvase el sistema para $k=3.$
+\end{ejer}
+
+\begin{ejer}\em (2007-2008)\\%
+Un agricultor tiene repartidas sus 10 hectáreas de terreno en barbecho, cultivo de trigo y cultivo de cebada. La superficie dedicada al trigo ocupa 2 hectáreas más que la dedicada a la cebada, mientras que en barbecho tiene 6 hectáreas menos que la superficie totoal dedicada al cultivo de trigo y cebada. ¿Cuántas hectáreas tiene dedicadas a cada uno de los cultivos y cuántas están en barbecho?
+\end{ejer}
+
+\begin{ejer}\em  (2007-2008)\\%
+Una empresa instala casas prefabricadas de tres tipos A, B Y C. Cada casa de tipo A necesita 10 horas de albañilería, 2 de fontanería y 2 de electricista. Cada casa de tipo B necesita 15 horas de albañilería, 4 de fontanería y 3 de electricista. Cada casa de tipo C necesita 20 horas de albañilería, 6 de fontanería y 5 de electricista. La empresa emplea exactamente 270 horas de trabajo al mes de albañilería, 68 de fontanería y 58 de electricista. ¿Cuántas casas de cada tipo instala la empresa en un mes?
+\end{ejer}
+
+\begin{ejer}\em (2006-2007)\\
+Se considera el sistema lineal de ecuaciones, dependiente del parámetro real $a:$
+\begin{equation*}
+\left \{ \begin{matrix} x-2y+z=0
+\\ 3x+2y-2z=3
+\\ 2x+2y+az=8 \end{matrix}\right. 
+\end{equation*}
+a) Discutir el sistema para los distintos valores de $a.$\\
+b) Resolver el sistema para $a=4.$
+\end{ejer}
+
+\begin{ejer}\em (2006-2007)\\
+Dado el sistema lineal de ecuaciones, dependiente del parámetro real $a:$
+\begin{equation*}
+\left \{ \begin{matrix} x+ay+z=1
+\\ 2y+az=2
+\\x+y+z=1 \end{matrix}\right. 
+\end{equation*}
+a) Discutir el sistema para los distintos valores de $a.$\\
+b) Resolver el sistema para $a=3$ y $a=1.$
+\end{ejer}
+
+
+\end{document}
+
+\begin{ejer}\em 
+
+\end{ejer}
+
+
+\begin{ejer}\em %
+Se considera el sistema lineal de ecuaciones dependiente del parámetro real $a:$
+\begin{equation*}
+\left \{ \begin{matrix} ax-2y\ \ \ =2
+\\ 3x-y-z=-1
+\\ x+3y+z=1 \end{matrix}\right. 
+\end{equation*}
+a) Discútase en función de los valores del parámetro $a\in\mathbb{R}.$\\
+b) Resuélvase para $a=1.$
+\end{ejer}
+
+\begin{ejer}\em 
+Se considera el sistema de ecuaciones lineales, dependiente del parámetro $k:$
+\begin{equation*}
+\left \{ \begin{matrix} kx+y\ \ \ =0
+\\ x+ky-2z=1
+\\ kx-3y+kz=0 \end{matrix}\right. 
+\end{equation*}
+a) Discútase el sistema según los diferentes valores de $k.$\\
+b) Resuélvase el sistema para $k=1.$
+\end{ejer}
+
+
+\begin{ejer}\em %
+Se considera el siguiente sistema lineal de ecuaciones, dependiente del parámetro real $k:$
+\begin{equation*}
+\left \{ \begin{matrix} x+y+z=2
+\\ x+ky+2z=5
+\\ kx+y+z=1 \end{matrix}\right. 
+\end{equation*}
+a) Discútase el sistema para los distintos valores de $k.$\\
+b) Resuélvase el sistema para $k=0.$\\
+c) Resuélvase el sistema para $k=2.$
+\end{ejer}
+
+\begin{ejer}\em
+Dada la matriz $$A=\begin{pmatrix}
+3 & 2 & 0
+\\ 1 & 0 &-1
+\\ 1 & 1 & 1
+\end{pmatrix}.
+$$
+a) Calcúlese $A^{-1}.$\\
+b) Resuélvase el sistema de ecuaciones dado por:
+\begin{equation*}
+A\cdot \begin{pmatrix}
+x
+\\ y
+\\ z \end{pmatrix}=\begin{pmatrix}
+1
+\\ 0 
+\\ 1 \end{pmatrix}
+\end{equation*}
+\end{ejer}
+
+\begin{ejer}\em  Modelo 2016\\%
+Considérese la matriz $A=\begin{pmatrix}
+1 & 3 & 1
+\\ a & 0 & 8
+\\ -1 & a & -6
+\end{pmatrix}
+$\\
+a) Determínese para qué valores de $a\in\mathbb{R}$ es invertible $A.$\\
+b) Resuélvase para $a=0$ el sistema
+\[
+A\cdot \begin{pmatrix}
+x\\y\\z
+\end{pmatrix}=\begin{pmatrix}
+0\\0\\0
+\end{pmatrix}
+\]
+\end{ejer}
+
+\begin{ejer}\em  Modelo 2016\\
+Determínese la matriz $X$ que verifica $\begin{pmatrix}
+3 & 1\\ -1 & 2
+\end{pmatrix}\cdot X=\begin{pmatrix}
+2 & 0\\1 & 4
+\end{pmatrix}-\begin{pmatrix}
+1 & 0\\ 4 & -1
+\end{pmatrix}\cdot X.$
+\end{ejer}
+
+\begin{ejer}\em  Modelo 2016\\%
+Se considera el sistema de ecuaciones lineales, dependiente del parámetro real  $a:$\\
+\[
+\left \{ \begin{matrix}
+x+y-z=1
+\\ 2x+2y-3z=3
+\\ 3x+ay-2z=5
+\end{matrix}\right.
+\]
+a) Discútase el sistema para los diferentes valores de $a.$\\
+b) Resuélvase el sistema en el caso $a=2.$
+\end{ejer}
